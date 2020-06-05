@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<!-- Meta tags -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Normalize CSS -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<!-- jQuery UI CSS -->
+	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+	rel = "stylesheet">
+	<!-- FancyBox -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+	<!-- Swiper slider CSS -->
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<!-- Main CSS -->
+	<link rel="stylesheet" href="css/main.css">
+
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+	<title>Прокат автомобилей</title>
+</head>
+<body>
+	<!-- Header -->
+	<header class="header">
+		<!-- Desctop fixed top menu -->
+		<div class="desktop-menu">
+			<div class="container">
+				<!-- Logo -->
+				<div class="desktop-menu__logo">
+					<a class="company-logo" href="index.html"><img src="img/chayka_logo.png" alt="logo"></a>
+				</div>
+				<!-- Links -->
+				<nav class="desktop-menu__nav">
+					<ul>
+						<li><a href="page1_avto-class.html">Автомобили</a></li>
+						<li><a href="page3_tarif.html">Тарифы</a></li>
+						<li><a href="page4_conditions.html">Условия проката</a></li>
+						<li><a href="page9_work.html">Работа в такси</a></li>
+						<li><a href="page5_reviews.html">Отзывы</a></li>
+						<li><a href="page10_discount.html">Акции</a></li>
+						<li><a href="page7_about.html">О компании</a></li>
+						<li><a href="page8_contacts.html">Контакты</a></li>
+					</ul>
+				</nav>
+				<!-- Button -->
+				<div class="top-contacts__button">
+					<div class="lead-btn">
+						<a id="order" data-fancybox data-src="#mini-form" href="javascript:;">Онлайн заявка</a>
+					</div>
+					<div class="top-contacts__button_discount">
+						Скидка 5%
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Tablet and mobile fixed top menu -->
+		<div class="tablet-panel">
+			<div class="container">
+				<!-- Button mobile menu -->
+				<div class="top-contacts__menu-icon">
+					<div class="top-contacts__menu-icon_contain"></div>
+				</div>
+				<!-- Adress block -->
+				<div class="top-contacts__item-wrap top-contacts__item-wrap_adress">
+					<a class="top-contacts__item-wrap_link" href="#">Пр. Вернадского, д. 41, стр. 1</a>
+					<p class="top-contacts__item-wrap_desc">Наш адрес в Москве</p>
+				</div>
+				<!-- Mail block -->
+				<div class="top-contacts__item-wrap top-contacts__item-wrap_mail">
+					<a class="top-contacts__item-wrap_link" href="mailto:prokat-km@mail.ru">prokat-km@mail.ru</a>
+					<p class="top-contacts__item-wrap_desc">Свяжитесь с нами</p>
+				</div>
+				<!-- Phone block -->
+				<div class="top-contacts__call">
+					<div class="top-contacts__call_tel top-contacts__call_tel_num1">
+						<a href="tel:+74993404077">+7(499)340-40-77</a>
+					</div>
+					<div class="top-contacts__call_tel top-contacts__call_tel_num2">
+						<a href="tel:+79637820700">+7(963)782-07-00</a>
+					</div>
+				</div>
+				<!-- Button -->
+				<div class="top-contacts__button">
+					<div class="lead-btn">
+						<a data-fancybox data-src="#mini-form" href="javascript:;">Онлайн заявка</a>
+					</div>
+					<div class="top-contacts__button_discount">
+						Скидка 5%
+					</div>
+				</div>
+				<div class="desktop-menu__logo">
+					<a class="company-logo" href="index.html"><img src="img/chayka_logo.png" alt="logo"></a>
+				</div>
+			</div>
+		</div>
+		<!-- Mobile menu active -->
+		<div class="mobile-menu">
+			<div class="container">
+				<!-- Close Button -->
+				<div class="close-btn"></div>
+				<!-- Logo -->
+				<div class="desktop-menu__logo">
+					<a class="company-logo" href="index.html"><img src="img/chayka_logo.png" alt="logo"></a>
+				</div>
+				<!-- Links -->
+				<nav class="desktop-menu__nav">
+					<ul>
+						<li><a class="hover-link" href="page1_avto-class.html">Автомобили</a></li>
+						<li><a class="hover-link" href="page3_tarif.html">Тарифы</a></li>
+						<li><a class="hover-link" href="page4_conditions.html">Условия проката</a></li>
+						<li><a class="hover-link" href="page9_work.html">Работа в такси</a></li>
+						<li><a class="hover-link" href="page5_reviews.html">Отзывы</a></li>
+						<li><a class="hover-link" href="page10_discount.html">Акции</a></li>
+						<li><a class="hover-link" href="page7_about.html">О компании</a></li>
+						<li><a class="hover-link" href="page8_contacts.html">Контакты</a></li>
+					</ul>
+				</nav>
+				<!-- Phone block -->
+				<div class="top-contacts__call">
+					<div class="top-contacts__call_tel top-contacts__call_tel_num1">
+						<a href="tel:+74993404077">+7(499)340-40-77</a>
+					</div>
+					<div class="top-contacts__call_tel top-contacts__call_tel_num2">
+						<a href="tel:+79637820700">+7(963)782-07-00</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="top-contacts">
+				<div class="top-contacts__part top-contacts__part-left">
+					<!-- Button mobile menu -->
+					<div class="top-contacts__menu-icon">
+						<div class="top-contacts__menu-icon_contain"></div>
+					</div>
+					<!-- Adress block -->
+					<div class="top-contacts__item-wrap top-contacts__item-wrap_adress">
+						<a class="top-contacts__item-wrap_link" href="#">Пр. Вернадского, д. 41, стр. 1</a>
+						<p class="top-contacts__item-wrap_desc">Наш адрес в Москве</p>
+					</div>
+					<!-- Time of work block -->
+					<div class="top-contacts__item-wrap top-contacts__item-wrap_work">
+						<span class="top-contacts__item-wrap_link">Работам с 9:00 до 19:00</span>
+						<p class="top-contacts__item-wrap_desc">Время работы офиса</p>
+					</div>
+				</div>
+				<div class="top-contacts__part top-contacts__part-right">
+					<!-- Mail block -->
+					<div class="top-contacts__item-wrap top-contacts__item-wrap_mail">
+						<a class="top-contacts__item-wrap_link" href="mailto:prokat-km@mail.ru">prokat-km@mail.ru</a>
+						<p class="top-contacts__item-wrap_desc">Свяжитесь с нами</p>
+					</div>
+					<!-- Phone block -->
+					<div class="top-contacts__call">
+						<div class="top-contacts__call_tel top-contacts__call_tel_num1">
+							<a href="tel:+74993404077">+7(499)340-40-77</a>
+						</div>
+						<div class="top-contacts__call_tel top-contacts__call_tel_num2">
+							<a href="tel:+79637820700">+7(963)782-07-00</a>
+						</div>
+					</div>
+					<!-- Button -->
+					<div class="top-contacts__button">
+						<div class="lead-btn">
+							<a data-fancybox data-src="#mini-form" href="javascript:;">Онлайн заявка</a>
+						</div>
+						<div class="top-contacts__button_discount">
+							Скидка 5%
+						</div>
+					</div>
+				</div>
+				<!-- Logo -->
+				<div class="top-contacts__logo">
+					<a class="company-logo" href="index.html">
+						<img src="img/logo.svg" alt="logo">
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Mini-form -->
+	<div style="display: none" id="mini-form">
+		<form action="#" class="mini-form">
+			<h2 class="mini-form__title">Забронировать автомобиль</h2>
+			<p class="mini-form__text"></p>
+			<div class="mini-form__input-group">
+				<input type="text" class="mini-form__name" placeholder="Ваше имя*" required>
+				<input type="tel" class="mini-form__tel phone_mask" placeholder="Ваш номер телефона" required>
+				<select>
+					<option value="" disabled selected>Марка автомобиля</option>
+					<option>Текст1</option>
+					<option>Текст2</option>
+					<option>Текст3</option>
+				</select>
+			</div>
+			<button type="submit" class="send-form-btn">Отправить заявку</button>
+			<div class="mini-form__policy find-car__form_politics">
+				Нажимая на кнопку “Отправить заявку” я соглашаюсь на обработку моих персональных данных и на <a href="#">политику конфеденциальности</a>
+			</div>
+		</form>
+	</div>
+
+	<!-- Section Find Car -->
+	<section class="find-car">
+		<div class="container">
+			<div class="find-car__text">
+				<h1 class="find-car__text_title">Прокат автомобилей в Москве</h1>
+				<p class="find-car__text_desc">
+					Все машины <span class="marked">технически исправны</span>, доставка и <span class="marked">забор</span> из любой точки Москвы
+				</p>
+			</div>
+			<!-- Form -->
+			<div class="find-car__form">
+				<form id="find-car" action="#">
+					<div class="find-car__form_wrap">
+						<input id="date_start" class="datepicker datapicker_date" type="text" name="date" placeholder="Дата начала аренды" />
+						<input id="date_end" class="datepicker datapicker_date" type="text" name="date" placeholder="Дата окончания аренды" />
+						<!-- Button -->
+						<div class="lead-btn-2">
+							<a data-fancybox data-src="#mini-form" href="javascript:;">Найти автомобиль</a>
+						</div>
+					</div>
+					<div class="find-car__form_politics">
+						Нажимая на кнопку “Найти” я согласен на обработку моих персональных данных и на <a href="#">политику конфеденциальности</a>
+					</div>
+					<div class="find-car__form_discount">
+						<a href="#">Как получить скидку 5%?</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<!-- Section Advantages -->
+	<section class="advantages">
+		<!-- Slider main container -->
+		<div class="advantages__slider container">
+			<div class="swiper-container">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide slide item1">
+						<h4 class="item-desc item1_desc">
+							Все наши машины продезинфицированы
+						</h4>
+					</div>
+					<div class="swiper-slide slide item2">
+						<h4 class="item-desc item2_desc">
+							<span class="marked_desc">Мы открыты!</span>  Автопрокат “Чайка” работает во время карантина!
+						</h4>
+					</div>
+				</div>
+			</div>
+			<!-- If we need navigation buttons -->
+			<div class="slide-prev"></div>
+			<div class="slide-next"></div>
+		</div>
+	</section>
+
+	<!-- Section Choose Car -->
+	<section class="choose-car">
+		<div class="container">
+			<div class="choose-car__title tire">
+				<h2>Выберите автомобиль для себя</h2>
+			</div>
+			<div class="choose-car__wrap">
+				<!-- Class 1 -->
+				<div class="choose-car__wrap_item">
+					<div class="choose-car__wrap_item_img car_1"></div>
+					<div class="choose-car__wrap_item_class"><a href="#">Эконом класс</a></div>
+					<div class="choose-car__wrap_item_price">От 850р/сутки</div>
+				</div>
+				<!-- Class 2 -->
+				<div class="choose-car__wrap_item">
+					<div class="choose-car__wrap_item_img car_2"></div>
+					<div class="choose-car__wrap_item_class"><a href="#">Комфорт класс</a></div>
+					<div class="choose-car__wrap_item_price">От 1200р/сутки</div>
+				</div>
+				<!-- Class 3 -->
+				<div class="choose-car__wrap_item">
+					<div class="choose-car__wrap_item_img car_3"></div>
+					<div class="choose-car__wrap_item_class"><a href="#">Внедорожники</a></div>
+					<div class="choose-car__wrap_item_price">От 2000р/сутки</div>
+				</div>
+				<!-- Class 4 -->
+				<div class="choose-car__wrap_item">
+					<div class="choose-car__wrap_item_img car_4"></div>
+					<div class="choose-car__wrap_item_class"><a href="#">Такси</a></div>
+					<div class="choose-car__wrap_item_price">Автомобили для работы в такси</div>
+					<div class="choose-car__wrap_item_new">
+						новое
+					</div>
+				</div>			
+			</div>
+		</div>		
+	</section>
+
+	<!-- Section Booking -->
+	<section class="booking">
+		<div class="container">
+			<h2 class="booking__title">
+				Забронируйте автомобиль нужной вам марки
+			</h2>
+			<!-- Card car -->
+			<!-- Car 1 -->
+			<div class="booking__wrap">
+				<div class="booking__wrap_img">
+					<img src="img/car-1.png" alt="car">
+				</div>
+				<div class="booking__wrap_price-card">
+					<div class="car-info">
+						<span class="car-info__name">
+							Hyundai Solaris 1.6 AV
+						</span>
+						<div class="car-info__item transmission">
+							Автомат
+						</div>
+						<div class="car-info__item places">
+							5 мест
+						</div>
+					</div>
+					<div class="car-price">
+						<div class="car-price__item">
+							<span class="car-price__item_days">3-5 дней</span>
+							<p class="car-price__item_cost">1200р</p>
+						</div>
+						<div class="car-price__item">
+							<span class="car-price__item_days">6-20 дней</span>
+							<p class="car-price__item_cost">1200р</p>
+						</div>
+						<div class="car-price__item">
+							<span class="car-price__item_days">21-30 дней</span>
+							<p class="car-price__item_cost">1200р</p>
+						</div>
+						<div class="car-price__item">
+							<span class="car-price__item_days">От 31 дня</span>
+							<p class="car-price__item_cost">1200р</p>
+						</div>
+						<div class="car-price__item">
+							<span class="car-price__item_days">Залог</span>
+							<p class="car-price__item_cost">8000р</p>
+						</div>
+					</div>
+				</div>
+				<div class="booking__wrap_link">
+					<div class="booking__wrap_link_text">
+						<p><span class="marked-text">1200р</span>/сутки</p>
+						<span class="desc">при заказе от 31 дня</span>
+					</div>
+					<div class="booking__wrap_link_button">
+						<div class="lead-btn">
+							<a href="#">Заказать</a>
+						</div>
+						<a href="#" class="about">Узнать подробнее</a>
+					</div>
+				</div>
+			</div>
+			<!-- Car 2 -->
+			<div class="booking__wrap">
+				<div class="booking__wrap_img">
+					<img src="img/car-1.png" alt="car">
+				</div>
+				<div class="booking__wrap_price-card">
+					<div class="car-info">
+						<span class="car-info__name">
+							Hyundai Solaris 1.6 AV
+						</span>
+						<div class="car-info__item transmission">
+							Автомат
+						</div>
+						<div class="car-info__item places">
+							5 мест
+						</div>
+					</div>
+					<div class="car-price">
+						<div class="car-price__item">
+							<span class="car-price__item_days">3-5 дней</span>
+							<p class="car-price__item_cost">1200р</p>
+						</div>
+						<div class="car-price__item">
+							<span class="car-price__item_days">6-20 дней</span>
+							<p class="car-price__item_cost">1200р</p>
+						</div>
+						<div class="car-price__item">
+							<span class="car-price__item_days">21-30 дней</span>
+							<p class="car-price__item_cost">1200р</p>
+						</div>
+						<div class="car-price__item">
+							<span class="car-price__item_days">От 31 дня</span>
+							<p class="car-price__item_cost">1200р</p>
+						</div>
+						<div class="car-price__item">
+							<span class="car-price__item_days">Залог</span>
+							<p class="car-price__item_cost">8000р</p>
+						</div>
+					</div>
+				</div>
+				<div class="booking__wrap_link">
+					<div class="booking__wrap_link_text">
+						<p><span class="marked-text">1200р</span>/сутки</p>
+						<span class="desc">при заказе от 31 дня</span>
+					</div>
+					<div class="booking__wrap_link_button">
+						<div class="lead-btn">
+							<a href="#">Заказать</a>
+						</div>
+						<a href="#" class="about">Узнать подробнее</a>
+					</div>
+				</div>
+			</div>
+			<!-- Car 3 -->
+			<div class="booking__wrap">
+				<div class="booking__wrap_img">
+					<img src="img/car-1.png" alt="car">
+				</div>
+				<div class="booking__wrap_price-card">
+					<div class="car-info">
+						<span class="car-info__name">
+							Hyundai Solaris 1.6 AV
+						</span>
+						<div class="car-info__item transmission">
+							Автомат
+						</div>
+						<div class="car-info__item places">
+							5 мест
+						</div>
+					</div>
+					<div class="car-price">
+						<div class="car-price__item">
+							<span class="car-price__item_days">3-5 дней</span>
+							<p class="car-price__item_cost">1200р</p>
+						</div>
+						<div class="car-price__item">
+							<span class="car-price__item_days">6-20 дней</span>
+							<p class="car-price__item_cost">1200р</p>
+						</div>
+						<div class="car-price__item">
+							<span class="car-price__item_days">21-30 дней</span>
+							<p class="car-price__item_cost">1200р</p>
+						</div>
+						<div class="car-price__item">
+							<span class="car-price__item_days">От 31 дня</span>
+							<p class="car-price__item_cost">1200р</p>
+						</div>
+						<div class="car-price__item">
+							<span class="car-price__item_days">Залог</span>
+							<p class="car-price__item_cost">8000р</p>
+						</div>
+					</div>
+				</div>
+				<div class="booking__wrap_link">
+					<div class="booking__wrap_link_text">
+						<p><span class="marked-text">1200р</span>/сутки</p>
+						<span class="desc">при заказе от 31 дня</span>
+					</div>
+					<div class="booking__wrap_link_button">
+						<div class="lead-btn">
+							<a href="#">Заказать</a>
+						</div>
+						<a href="#" class="about">Узнать подробнее</a>
+					</div>
+				</div>
+			</div>
+			<!-- Car 4 -->
+			<div class="booking__wrap">
+				<div class="booking__wrap_img">
+					<img src="img/car-1.png" alt="car">
+				</div>
+				<div class="booking__wrap_price-card">
+					<div class="car-info">
+						<span class="car-info__name">
+							Hyundai Solaris 1.6 AV
+						</span>
+						<div class="car-info__item transmission">
+							Автомат
+						</div>
+						<div class="car-info__item places">
+							5 мест
+						</div>
+					</div>
+					<div class="car-price">
+						<div class="car-price__item">
+							<span class="car-price__item_days">3-5 дней</span>
+							<p class="car-price__item_cost">1200р</p>
+						</div>
+						<div class="car-price__item">
+							<span class="car-price__item_days">6-20 дней</span>
+							<p class="car-price__item_cost">1200р</p>
+						</div>
+						<div class="car-price__item">
+							<span class="car-price__item_days">21-30 дней</span>
+							<p class="car-price__item_cost">1200р</p>
+						</div>
+						<div class="car-price__item">
+							<span class="car-price__item_days">От 31 дня</span>
+							<p class="car-price__item_cost">1200р</p>
+						</div>
+						<div class="car-price__item">
+							<span class="car-price__item_days">Залог</span>
+							<p class="car-price__item_cost">8000р</p>
+						</div>
+					</div>
+				</div>
+				<div class="booking__wrap_link">
+					<div class="booking__wrap_link_text">
+						<p><span class="marked-text">1200р</span>/сутки</p>
+						<span class="desc">при заказе от 31 дня</span>
+					</div>
+					<div class="booking__wrap_link_button">
+						<div class="lead-btn">
+							<a href="#">Заказать</a>
+						</div>
+						<a href="#" class="about">Узнать подробнее</a>
+					</div>
+				</div>
+			</div>
+			<!-- Car 5 -->
+			<div class="booking__wrap">
+				<div class="booking__wrap_img">
+					<img src="img/car-1.png" alt="car">
+				</div>
+				<div class="booking__wrap_price-card">
+					<div class="car-info">
+						<span class="car-info__name">
+							Hyundai Solaris 1.6 AV
+						</span>
+						<div class="car-info__item transmission">
+							Автомат
+						</div>
+						<div class="car-info__item places">
+							5 мест
+						</div>
+					</div>
+					<div class="car-price">
+						<div class="car-price__item">
+							<span class="car-price__item_days">3-5 дней</span>
+							<p class="car-price__item_cost">1200р</p>
+						</div>
+						<div class="car-price__item">
+							<span class="car-price__item_days">6-20 дней</span>
+							<p class="car-price__item_cost">1200р</p>
+						</div>
+						<div class="car-price__item">
+							<span class="car-price__item_days">21-30 дней</span>
+							<p class="car-price__item_cost">1200р</p>
+						</div>
+						<div class="car-price__item">
+							<span class="car-price__item_days">От 31 дня</span>
+							<p class="car-price__item_cost">1200р</p>
+						</div>
+						<div class="car-price__item">
+							<span class="car-price__item_days">Залог</span>
+							<p class="car-price__item_cost">8000р</p>
+						</div>
+					</div>
+				</div>
+				<div class="booking__wrap_link">
+					<div class="booking__wrap_link_text">
+						<p><span class="marked-text">1200р</span>/сутки</p>
+						<span class="desc">при заказе от 31 дня</span>
+					</div>
+					<div class="booking__wrap_link_button">
+						<div class="lead-btn">
+							<a href="#">Заказать</a>
+						</div>
+						<a href="#" class="about">Узнать подробнее</a>
+					</div>
+				</div>
+			</div>
+			<!-- Car 6 -->
+			<div class="booking__wrap">
+				<div class="booking__wrap_img">
+					<img src="img/car-1.png" alt="car">
+				</div>
+				<div class="booking__wrap_price-card">
+					<div class="car-info">
+						<span class="car-info__name">
+							Hyundai Solaris 1.6 AV
+						</span>
+						<div class="car-info__item transmission">
+							Автомат
+						</div>
+						<div class="car-info__item places">
+							5 мест
+						</div>
+					</div>
+					<div class="car-price">
+						<div class="car-price__item">
+							<span class="car-price__item_days">3-5 дней</span>
+							<p class="car-price__item_cost">1200р</p>
+						</div>
+						<div class="car-price__item">
+							<span class="car-price__item_days">6-20 дней</span>
+							<p class="car-price__item_cost">1200р</p>
+						</div>
+						<div class="car-price__item">
+							<span class="car-price__item_days">21-30 дней</span>
+							<p class="car-price__item_cost">1200р</p>
+						</div>
+						<div class="car-price__item">
+							<span class="car-price__item_days">От 31 дня</span>
+							<p class="car-price__item_cost">1200р</p>
+						</div>
+						<div class="car-price__item">
+							<span class="car-price__item_days">Залог</span>
+							<p class="car-price__item_cost">8000р</p>
+						</div>
+					</div>
+				</div>
+				<div class="booking__wrap_link">
+					<div class="booking__wrap_link_text">
+						<p><span class="marked-text">1200р</span>/сутки</p>
+						<span class="desc">при заказе от 31 дня</span>
+					</div>
+					<div class="booking__wrap_link_button">
+						<div class="lead-btn">
+							<a href="#">Заказать</a>
+						</div>
+						<a href="#" class="about">Узнать подробнее</a>
+					</div>
+				</div>
+			</div>
+			<!-- Car 7 -->
+			<div class="booking__wrap">
+				<div class="booking__wrap_img">
+					<img src="img/car-1.png" alt="car">
+				</div>
+				<div class="booking__wrap_price-card">
+					<div class="car-info">
+						<span class="car-info__name">
+							Hyundai Solaris 1.6 AV
+						</span>
+						<div class="car-info__item transmission">
+							Автомат
+						</div>
+						<div class="car-info__item places">
+							5 мест
+						</div>
+					</div>
+					<div class="car-price">
+						<div class="car-price__item">
+							<span class="car-price__item_days">3-5 дней</span>
+							<p class="car-price__item_cost">1200р</p>
+						</div>
+						<div class="car-price__item">
+							<span class="car-price__item_days">6-20 дней</span>
+							<p class="car-price__item_cost">1200р</p>
+						</div>
+						<div class="car-price__item">
+							<span class="car-price__item_days">21-30 дней</span>
+							<p class="car-price__item_cost">1200р</p>
+						</div>
+						<div class="car-price__item">
+							<span class="car-price__item_days">От 31 дня</span>
+							<p class="car-price__item_cost">1200р</p>
+						</div>
+						<div class="car-price__item">
+							<span class="car-price__item_days">Залог</span>
+							<p class="car-price__item_cost">8000р</p>
+						</div>
+					</div>
+				</div>
+				<div class="booking__wrap_link">
+					<div class="booking__wrap_link_text">
+						<p><span class="marked-text">1200р</span>/сутки</p>
+						<span class="desc">при заказе от 31 дня</span>
+					</div>
+					<div class="booking__wrap_link_button">
+						<div class="lead-btn">
+							<a href="#">Заказать</a>
+						</div>
+						<a href="#" class="about">Узнать подробнее</a>
+					</div>
+				</div>
+			</div>
+			<!-- Car 8 -->
+			<div class="booking__wrap">
+				<div class="booking__wrap_img">
+					<img src="img/car-1.png" alt="car">
+				</div>
+				<div class="booking__wrap_price-card">
+					<div class="car-info">
+						<span class="car-info__name">
+							Hyundai Solaris 1.6 AV
+						</span>
+						<div class="car-info__item transmission">
+							Автомат
+						</div>
+						<div class="car-info__item places">
+							5 мест
+						</div>
+					</div>
+					<div class="car-price">
+						<div class="car-price__item">
+							<span class="car-price__item_days">3-5 дней</span>
+							<p class="car-price__item_cost">1200р</p>
+						</div>
+						<div class="car-price__item">
+							<span class="car-price__item_days">6-20 дней</span>
+							<p class="car-price__item_cost">1200р</p>
+						</div>
+						<div class="car-price__item">
+							<span class="car-price__item_days">21-30 дней</span>
+							<p class="car-price__item_cost">1200р</p>
+						</div>
+						<div class="car-price__item">
+							<span class="car-price__item_days">От 31 дня</span>
+							<p class="car-price__item_cost">1200р</p>
+						</div>
+						<div class="car-price__item">
+							<span class="car-price__item_days">Залог</span>
+							<p class="car-price__item_cost">8000р</p>
+						</div>
+					</div>
+				</div>
+				<div class="booking__wrap_link">
+					<div class="booking__wrap_link_text">
+						<p><span class="marked-text">1200р</span>/сутки</p>
+						<span class="desc">при заказе от 31 дня</span>
+					</div>
+					<div class="booking__wrap_link_button">
+						<div class="lead-btn">
+							<a href="#">Заказать</a>
+						</div>
+						<a href="#" class="about">Узнать подробнее</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Section How Works -->
+	<section class="how-works">
+		<div class="container">
+			<h2 class="how-works__title">Как это работает?</h2>
+			<div class="how-works__wrap">
+				<!-- Accordeon -->
+				<div class="accordion_wrap how-works__accordion">
+					<ul class="accordion">
+						<!-- Item 1 -->
+						<li class="acc__card pseudo pseudo-2">
+							<a class="toggle how-works__accordion_link" href=#>Заявка <span class="accordeon-arrow"></span></a>
+							<div id="first-acc" class="inner how-works__accordion_content">
+								<p class="how-works__accordion_text">
+									Вы оставляете заявку на сайте или по телефону, получаете подтверждение.
+								</p>
+								<div class="lead-btn-2 how-works__accordion_button">
+									<a href="#">Оставить заявку</a>
+								</div>
+							</div>
+						</li>
+						<!-- Item 2 -->
+						<li class="acc__card pseudo">
+							<a class="toggle how-works__accordion_link" href=#>Выдача авто <span class="accordeon-arrow"></span></a>
+							<div class="inner how-works__accordion_content">
+								<p class="how-works__accordion_text">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt laborum ipsa nisi maxime, non! Quisquam, tempore. At aut quos non autem saepe mollitia tenetur sunt, tempora deserunt minus. Perferendis, dolorum.
+								</p>
+							</div>
+						</li>
+						<!-- Item 3 -->
+						<li class="acc__card pseudo">
+							<a class="toggle how-works__accordion_link" href=#>Пользование авто <span class="accordeon-arrow"></span></a>
+							<div class="inner how-works__accordion_content">
+								<p class="how-works__accordion_text">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt laborum ipsa nisi maxime, non! Quisquam, tempore. At aut quos non autem saepe mollitia tenetur sunt, tempora deserunt minus. Perferendis, dolorum.
+								</p>
+							</div>
+						</li>
+						<!-- Item 4 -->
+						<li class="acc__card pseudo">
+							<a class="toggle how-works__accordion_link" href=#>Возврат авто <span class="accordeon-arrow"></span></a>
+							<div class="inner how-works__accordion_content">
+								<p class="how-works__accordion_text">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt laborum ipsa nisi maxime, non! Quisquam, tempore. At aut quos non autem saepe mollitia tenetur sunt, tempora deserunt minus. Perferendis, dolorum.
+								</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- Left Side -->
+				<div class="how-works__left-side">
+					<div class="how-works__left-side_wrap">
+						<div class="how-works__left-side_wrap_text">
+							<div class="name">Kia Rio</div>
+							<span class="marked">1200р/сутки</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Section Delivery -->
+	<section class="delivery gradient_mask">
+		<div class="container">
+			<h3 class="delivery__title">
+				Привезём и заберём автомобиль из любой точки Москвы
+			</h3>
+			<p class="delivery__text">
+				Доставка и забор автомобиля в Москве - очень <b>удобная услуга</b>. Вам не нужно приезжать в офис, тратить своё драгоценное время, мы сами это сделаем за Вас. Главное, определиться с автомобилем и позвонить нам!
+			</p>
+			<div class="lead-btn-2">
+				<a href="#">подобрать автомобиль</a>
+			</div>
+			<a href="#" class="delivery__link">Как мне получить скидку 5%?</a>
+		</div>
+	</section>
+
+	<!-- Section Rent -->
+	<section class="rent">
+		<div class="container">
+			<h2 class="rent__title">Подборки автомобилей по теме</h2>
+			<div class="rent-wrap">
+				<!-- Item 1 -->
+				<div class="rent__item item1">
+					<div class="rent__item_title">
+						Взять в прокат для поездки на дачу автомобиль
+					</div>
+					<div class="rent__item_text">
+						Аренда авто на выходные по Москве и Московской области
+					</div>
+					<div class="rent__item_link">
+						<a href="#">Смотреть все</a>
+					</div>
+				</div>
+				<!-- Item 2 -->
+				<div class="rent__item item2">
+					<div class="rent__item_title">
+						ДТП или поломка? Возмите автомобиль на подмену
+					</div>
+					<div class="rent__item_text">
+						Просто позвоните, доставим автомобиль в любую точку Москвы
+					</div>
+					<div class="rent__item_link">
+						<a href="#">Смотреть все</a>
+					</div>
+				</div>
+				<!-- Item 3 -->
+				<div class="rent__item item3">
+					<div class="rent__item_title">
+						Не хотите хранить шины, переобувать резину, проходить ТО
+					</div>
+					<div class="rent__item_text">
+						Мы сами заботимся о своих автомобилях
+					</div>
+					<div class="rent__item_link">
+						<a href="#">Смотреть все</a>
+					</div>
+				</div>
+				<!-- Item 4 -->
+				<div class="rent__item item4">
+					<div class="rent__item_title">
+						Лучше, чем каршеринг!
+					</div>
+					<div class="rent__item_text">
+						Все наши автомобиле в отличном техническом состоянии, дезинфицируются и проверяются
+					</div>
+					<div class="rent__item_link">
+						<a href="#">Смотреть все</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Sectionn Why We -->
+	<section class="why-we">
+		<div class="container">
+			<h2 class="why-we__title">Простые мелочи, которые отличают <br>автопрокат «Чайка» от других сервисов</h2>
+			<div class="why-we-wrap">
+				<!-- Item 1 -->
+				<div class="why-we-wrap__item item1">
+					<div class="why-we-wrap__text">
+						<div class="why-we-wrap__text_name">Новые модели</div>
+						<div class="why-we-wrap__text_desc">
+							Все автомобили в эксплуатации не более 3х лет 
+						</div>
+					</div>
+				</div>
+				<!-- Item 2 -->
+				<div class="why-we-wrap__item item2">
+					<div class="why-we-wrap__text">
+						<div class="why-we-wrap__text_name">Рядом с метро</div>
+						<div class="why-we-wrap__text_desc">
+							Наш автопарк находится близко от метро
+						</div>
+					</div>
+				</div>
+				<!-- Item 3 -->
+				<div class="why-we-wrap__item item3">
+					<div class="why-we-wrap__text">
+						<div class="why-we-wrap__text_name">Детские кресла</div>
+						<div class="why-we-wrap__text_desc">
+							По запросы мы предоставляем детские кресла и другие необходимые приспособления
+						</div>
+					</div>
+				</div>
+				<!-- Item 4 -->
+				<div class="why-we-wrap__item item4">
+					<div class="why-we-wrap__text">
+						<div class="why-we-wrap__text_name">Автомобили технически исправны</div>
+						<div class="why-we-wrap__text_desc">
+							Все машины технически исправны с наполовину заполненным баком
+						</div>
+					</div>
+				</div>
+				<!-- Item 5 -->
+				<div class="why-we-wrap__item item5">
+					<div class="why-we-wrap__text">
+						<div class="why-we-wrap__text_name">Честные цены</div>
+						<div class="why-we-wrap__text_desc">
+							В нашем прокате низкие цены без лишних и ненужных накруток
+						</div>
+					</div>
+				</div>
+				<!-- Item 6 -->
+				<div class="why-we-wrap__item item6">
+					<div class="why-we-wrap__text">
+						<div class="why-we-wrap__text_name">Отвественный персонал</div>
+						<div class="why-we-wrap__text_desc">
+							Наш подготовленный персонал умеет решать все непредвиденные ситуации 
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Section Comments -->
+	<section class="comments">
+		<div class="container">
+			<h2 class="comments__title">Отзывы наших клиентов <span class="comments__amount">141 отзыв</span></h2>
+			<div class="comments__text">
+				Мы публикуем все отзывы, позитивные, негативные — не важно. <br>
+				Почитайте — поймёте почему так.
+			</div>
+			<!-- Slider -->
+			<div class="comments__slider">
+				<!-- Slider main container -->
+				<div class="swiper-container-bottom">
+					<div class="swiper-wrapper comments__slider_wrap">
+						<!-- Slide 1 -->
+						<div class="swiper-slide comments__item">
+							<div class="comments__item_comm">
+								Прилетела в Москву и понадобилась машина, обратилась в данный прокат авто, оформила заявку, получила подтверждение, поставила бронь и поехала... 
+								<a class="link" href="#">Прочитать все отзывы</a>
+							</div>
+							<p class="comments__item_name">Виктория</p>
+							<span class="comments__item_date">11 января 2020</span>
+						</div>
+						<!-- Slide 2 -->
+						<div class="swiper-slide comments__item">
+							<div class="comments__item_comm">
+								Прилетела в Москву и понадобилась машина, обратилась в данный прокат авто, оформила заявку, получила подтверждение, поставила бронь и поехала... 
+								<a class="link" href="#">Прочитать все отзывы</a>
+							</div>
+							<p class="comments__item_name">Виктория</p>
+							<span class="comments__item_date">11 января 2020</span>
+						</div>
+						<!-- Slide 3 -->
+						<div class="swiper-slide comments__item">
+							<div class="comments__item_comm">
+								Прилетела в Москву и понадобилась машина, обратилась в данный прокат авто, оформила заявку, получила подтверждение, поставила бронь и поехала... 
+								<a class="link" href="#">Прочитать все отзывы</a>
+							</div>
+							<p class="comments__item_name">Виктория</p>
+							<span class="comments__item_date">11 января 2020</span>
+						</div>
+					</div>
+				</div>
+				<!-- If we need navigation buttons -->
+				<div class="slide-prev"></div>
+				<div class="slide-next"></div>
+			</div>
+			<!-- Buttons -->
+			<div class="comments__btngroup">
+				<div class="comments-btn">
+					<a href="#">посмотреть все отзывы</a>
+				</div>
+				<div class="lead-btn-2">
+					<a href="#">Оставить свой отзыв</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Section Lead Bottom -->
+	<section class="lead-bottom">
+		<div class="container">
+			<div class="lead-bottom__text">
+				<h3 class="lead-bottom__title">Скидки постоянным клиентам</h3>
+				<p class="lead-bottom__desc">
+					Мы заботимся о наших клиентах и предоставляем скидку 5%! Просто заполните заявку на сайте! Спасибо, что пользуетесь нашими услугами.
+				</p>
+			</div>
+			<div class="lead-bottom__button">
+				<div class="lead-btn-2">
+					<a href="#">стать клиентом</a>
+				</div>
+				<a href="#" class="lead-bottom__link">Как еще получить скидку 5%?</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Section About Company -->
+	<section class="about-us">
+		<div class="container">
+			<div class="about-us__wrap">
+				<h2 class="about-us__title">О компании</h2>
+				<div class="about-us__text">
+					Автопрокат «Чайка» предлагает автомобили в аренду без водителя в Москве. Свои услуги мы предлагаем с 2001 года, и за годы работы в компании появилось много постоянных клиентов. Автомобили в прокат, которые предлагает наша компания,  всегда в отличном состоянии и всегда проходят не только технический осмотр, но и регламентные работы при сдаче автомобиля заказчику.  Мы ценим своих клиентов и предлагаем автомобили в аренду иностранного производства только с АКПП.  Аренда автомобиля с автоматической коробкой передач, особенно актуально в Москве.  Даже опытные водители, которые привыкли к езде на «механике», оставляют свой выбор на авто с АКПП.
+				</div>
+				<div class="comments-btn">
+					<a href="#">Читать подробнее</a>
+				</div>
+			</div>
+			<div class="about-us__image">
+				<img src="img/about-us.png" alt="company">
+			</div>
+		</div>
+	</section>
+
+	<!-- Section Partners -->
+	<section class="partners">
+		<div class="container">
+			<h2 class="partners__title">Наши партнеры</h2>
+			<div class="partners__wrap">
+				<!-- Partner 1 -->
+				<div class="partners__wrap_image">
+					<img src="img/partner-1.png" alt="profil-met">
+				</div>
+				<!-- Partner 2 -->
+				<div class="partners__wrap_image">
+					<img src="img/partner-2.png" alt="partner">
+				</div>
+				<!-- Partner 3 -->
+				<div class="partners__wrap_image">
+					<img src="img/partner-3.png" alt="mebel-pro">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Section Map and Contacts -->
+	<section class="map">
+		<iframe class="yandex-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac2077f45fb3448751d2a4264c5aca7fbfd6c5b400e2aa978a59fdd3ab45a8aef&amp;source=constructor" width="100%" height="492" frameborder="0"></iframe>
+		<div class="container">
+			<div class="map__contacts">
+				<h2 class="map__title">Контакты</h2>
+				<div class="map__contact-group">
+					<h3 class="map__heading">Адрес: </h3>
+					<p class="map__text">г. Москва, Проспект Вернадского 41 с1</p>
+				</div>
+				<div class="map__contact-group">
+					<h3 class="map__heading">Телефон: </h3>
+					<p class="map__text">
+						<a href="tel:+74993404077">+7(499)340-40-77</a>, 
+						<a href="tel:+74959950700">+7(495)995-07-00</a>
+					</p>
+				</div>
+				<div class="map__contact-group">
+					<h3 class="map__heading">Email: </h3>
+					<p class="map__text">
+						<a href="mailto:prokat-km@mail.ru">prokat-km@mail.ru</a>
+					</p>
+				</div>
+				<div class="map__social">
+					<a href="#" class="map__social_icon-wrap vk"></a>
+					<a href="#" class="map__social_icon-wrap vk"></a>
+					<a href="#" class="map__social_icon-wrap vk"></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__logo">
+				<a class="company-logo" href="index.html"><img src="img/logo-footer.png" alt="logo"></a>
+			</div>
+			<!-- Block 1 -->
+			<div class="footer__block first">
+				<ul>
+					<li class="footer__block_title"><a href="#">Главная</a></li>
+					<li class="footer__block_link"><a href="#">О компании</a></li>
+					<li class="footer__block_link"><a href="#">Отзывы</a></li>
+					<li class="footer__block_link"><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+			<!-- Block 2 -->
+			<div class="footer__block">
+				<ul>
+					<li class="footer__block_title"><a href="#">Каталог</a></li>
+					<li class="footer__block_link"><a href="#">Эконом класс</a></li>
+					<li class="footer__block_link"><a href="#">Премиум класс</a></li>
+					<li class="footer__block_link"><a href="#">Внедорожники</a></li>
+					<li class="footer__block_link"><a href="#">Акции</a></li>
+				</ul>
+			</div>
+			<!-- Block 3 -->
+			<div class="footer__block">
+				<ul>
+					<li class="footer__block_title"><a href="#">условия</a></li>
+					<li class="footer__block_link"><a href="#">Наши услуги</a></li>
+					<li class="footer__block_link"><a href="#">Условия проката</a></li>
+					<li class="footer__block_link"><a href="#">Тарифы компании</a></li>
+					<li class="footer__block_link"><a href="#">Автомобили для работы в такси</a></li>
+				</ul>
+			</div>
+			<!-- Block 4 -->
+			<div class="footer__block">
+				<ul>
+					<li class="footer__block_title"><a href="#">Контакты</a></li>
+					<li class="footer__block_tel"><a href="tel:+74993404077">+7(499)340-40-77</a></li>
+					<li class="footer__block_tel"><a href="tel:+74959950700">+7(495)995-07-00</a></li>
+					<li class="footer__block_adress">г. Москва, пр. Вернадского, 41 с1</li>
+					<li class="footer__block_mail"><a href="mailto:prokat-km@mail.ru">prokat-km@mail.ru</a></li>
+				</ul>
+			</div>
+			<!-- Block 5 -->
+			<div class="footer__block policy-block">
+				<ul>
+					<li class="footer__block_copyright">(с) 2001-2020 Автопрокат “Чайка”</li>
+					<li class="footer__block_policy"><a href="#">Политика конфиденциальности</a></li>					
+				</ul>
+				<!-- Button -->
+				<div class="top-contacts__button">
+					<div class="lead-btn">
+						<a href="#">Онлайн заявка</a>
+					</div>
+					<div class="top-contacts__button_discount button_discount-bottom">
+						Скидка 5%
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<!-- Mask phone input -->
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<!-- FancyBox -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+	<!-- jQuery UI -->
+	<script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	<!-- jQuery UI Russian Language -->
+	<script src="js/ui-ru.js"></script>
+	<!-- Swiper slider -->
+	<script src="js/swiper.min.js"></script>
+	<!-- Main JS -->
+	<script src="js/main.js"></script>
+</body>
+</html>

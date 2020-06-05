@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<!-- Meta tags -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Normalize CSS -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<!-- jQuery UI CSS -->
+	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+	rel = "stylesheet">
+	<!-- FancyBox -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+	<!-- Swiper slider CSS -->
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<!-- Main CSS -->
+	<link rel="stylesheet" href="css/main.css">
+
+	<title>Отзывы</title>
+</head>
+<body>
+	<!-- Header -->
+	<header class="header">
+		<!-- Desctop fixed top menu -->
+		<div class="desktop-menu">
+			<div class="container">
+				<!-- Logo -->
+				<div class="desktop-menu__logo">
+					<a href="index.html"><img src="img/chayka_logo.png" alt="logo"></a>
+				</div>
+				<!-- Links -->
+				<nav class="desktop-menu__nav">
+					<ul>
+						<li><a href="#">Автомобили</a></li>
+						<li><a href="#">Тарифы</a></li>
+						<li><a href="#">Условия проката</a></li>
+						<li><a href="#">Работа в такси</a></li>
+						<li><a href="#">Отзывы</a></li>
+						<li><a href="#">Акции</a></li>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+				<!-- Button -->
+				<div class="top-contacts__button">
+					<div class="lead-btn">
+						<a id="order" href="#">Онлайн заявка</a>
+					</div>
+					<div class="top-contacts__button_discount">
+						Скидка 5%
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Tablet and mobile fixed top menu -->
+		<div class="tablet-panel">
+			<div class="container">
+				<!-- Button mobile menu -->
+				<div class="top-contacts__menu-icon">
+					<div class="top-contacts__menu-icon_contain"></div>
+				</div>
+				<!-- Adress block -->
+				<div class="top-contacts__item-wrap top-contacts__item-wrap_adress">
+					<a class="top-contacts__item-wrap_link" href="#">Пр. Вернадского, д. 41, стр. 1</a>
+					<p class="top-contacts__item-wrap_desc">Наш адрес в Москве</p>
+				</div>
+				<!-- Mail block -->
+				<div class="top-contacts__item-wrap top-contacts__item-wrap_mail">
+					<a class="top-contacts__item-wrap_link" href="mailto:prokat-km@mail.ru">prokat-km@mail.ru</a>
+					<p class="top-contacts__item-wrap_desc">Свяжитесь с нами</p>
+				</div>
+				<!-- Phone block -->
+				<div class="top-contacts__call">
+					<div class="top-contacts__call_tel top-contacts__call_tel_num1">
+						<a href="tel:+74993404077">+7(499)340-40-77</a>
+					</div>
+					<div class="top-contacts__call_tel top-contacts__call_tel_num2">
+						<a href="tel:+79637820700">+7(963)782-07-00</a>
+					</div>
+				</div>
+				<!-- Button -->
+				<div class="top-contacts__button">
+					<div class="lead-btn">
+						<a href="#">Онлайн заявка</a>
+					</div>
+					<div class="top-contacts__button_discount">
+						Скидка 5%
+					</div>
+				</div>
+				<div class="desktop-menu__logo">
+					<a href="index.html"><img src="img/chayka_logo.png" alt="logo"></a>
+				</div>
+			</div>
+		</div>
+		<!-- Mobile menu active -->
+		<div class="mobile-menu">
+			<div class="container">
+				<!-- Close Button -->
+				<div class="close-btn"></div>
+				<!-- Logo -->
+				<div class="desktop-menu__logo">
+					<a href="index.html"><img src="img/chayka_logo.png" alt="logo"></a>
+				</div>
+				<!-- Links -->
+				<nav class="desktop-menu__nav">
+					<ul>
+						<li><a class="hover-link" href="#">Автомобили</a></li>
+						<li><a class="hover-link" href="#">Тарифы</a></li>
+						<li><a class="hover-link" href="#">Условия проката</a></li>
+						<li><a class="hover-link" href="#">Работа в такси</a></li>
+						<li><a class="hover-link" href="#">Отзывы</a></li>
+						<li><a class="hover-link" href="#">Акции</a></li>
+						<li><a class="hover-link" href="#">О компании</a></li>
+						<li><a class="hover-link" href="#">Контакты</a></li>
+					</ul>
+				</nav>
+				<!-- Phone block -->
+				<div class="top-contacts__call">
+					<div class="top-contacts__call_tel top-contacts__call_tel_num1">
+						<a href="tel:+74993404077">+7(499)340-40-77</a>
+					</div>
+					<div class="top-contacts__call_tel top-contacts__call_tel_num2">
+						<a href="tel:+79637820700">+7(963)782-07-00</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="top-contacts">
+				<div class="top-contacts__part top-contacts__part-left">
+					<!-- Button mobile menu -->
+					<div class="top-contacts__menu-icon">
+						<div class="top-contacts__menu-icon_contain"></div>
+					</div>
+					<!-- Adress block -->
+					<div class="top-contacts__item-wrap top-contacts__item-wrap_adress">
+						<a class="top-contacts__item-wrap_link" href="#">Пр. Вернадского, д. 41, стр. 1</a>
+						<p class="top-contacts__item-wrap_desc">Наш адрес в Москве</p>
+					</div>
+					<!-- Time of work block -->
+					<div class="top-contacts__item-wrap top-contacts__item-wrap_work">
+						<span class="top-contacts__item-wrap_link">Работам с 9:00 до 19:00</span>
+						<p class="top-contacts__item-wrap_desc">Время работы офиса</p>
+					</div>
+				</div>
+				<div class="top-contacts__part top-contacts__part-right">
+					<!-- Mail block -->
+					<div class="top-contacts__item-wrap top-contacts__item-wrap_mail">
+						<a class="top-contacts__item-wrap_link" href="mailto:prokat-km@mail.ru">prokat-km@mail.ru</a>
+						<p class="top-contacts__item-wrap_desc">Свяжитесь с нами</p>
+					</div>
+					<!-- Phone block -->
+					<div class="top-contacts__call">
+						<div class="top-contacts__call_tel top-contacts__call_tel_num1">
+							<a href="tel:+74993404077">+7(499)340-40-77</a>
+						</div>
+						<div class="top-contacts__call_tel top-contacts__call_tel_num2">
+							<a href="tel:+79637820700">+7(963)782-07-00</a>
+						</div>
+					</div>
+					<!-- Button -->
+					<div class="top-contacts__button">
+						<div class="lead-btn">
+							<a href="#">Онлайн заявка</a>
+						</div>
+						<div class="top-contacts__button_discount">
+							Скидка 5%
+						</div>
+					</div>
+				</div>
+				<!-- Logo -->
+				<div class="top-contacts__logo">
+					<a href="index.html">
+						<img src="img/logo.svg" alt="logo">
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Mini-form -->
+	<div style="display: none" id="mini-form">
+		<form action="#" class="mini-form">
+			<h2 class="mini-form__title">Забронировать автомобиль</h2>
+			<p class="mini-form__text"></p>
+			<div class="mini-form__input-group">
+				<input type="text" class="mini-form__name" placeholder="Ваше имя*" required>
+				<input type="tel" class="mini-form__tel phone_mask" placeholder="Ваш номер телефона" required>
+				<select>
+					<option value="" disabled selected>Марка автомобиля</option>
+					<option>Текст1</option>
+					<option>Текст2</option>
+					<option>Текст3</option>
+				</select>
+			</div>
+			<button type="submit" class="send-form-btn">Отправить заявку</button>
+			<div class="mini-form__policy find-car__form_politics">
+				Нажимая на кнопку “Отправить заявку” я соглашаюсь на обработку моих персональных данных и на <a href="#">политику конфеденциальности</a>
+			</div>
+		</form>
+	</div>
+
+	<!-- Section Page-name -->
+	<section class="page-name">
+		<div class="container">
+			<h2 class="page-name__title">Отзывы</h2>
+			<div class="page-name__breadcrumbs"><a href="#">Главная</a> / <a href="">Отзывы</a></div>
+		</div>
+	</section>
+
+	<!-- Section Reviews -->
+	<section class="reviews">
+		<div class="container">
+			<h3 class="reviews__title">
+				Отзывы наших клиентов
+				<span class="comments__amount">141 отзыв</span>
+			</h3>
+			<p class="reviews__text">
+				Мы публикуем все отзывы, позитивные, негативные — не важно.
+				Почитайте — поймёте почему так.
+			</p>
+			<div class="lead-btn-2">
+				<a href="#">Оставить свой отзыв</a>
+			</div>
+			<!-- Num 1 -->
+			<div class="reviews__wrap">
+				<!-- Review -->
+				<div class="reviews__rev-item reviews__rev-item-1">
+					<p class="reviews__wrap_desk">
+						Прилетела в Москву и понадобилась машина, обратилась в данный прокат авто, оформила заявку, получила подтверждение, поставила бронь и поехала забирать. По приезду в офис ознакомилась с договором и получила автомобиль. По самой машине все отлично, свежая и без запахов, самое главное, что оказалась красненькая!! В общем и целом осталась очень довольна, всем советую!!
+					</p>
+					<p class="reviews__wrap_name">Виктория <span class="reviews__wrap_date">11 января 2020</span></p>
+					<span class="reviews__which-one">141</span>
+				</div>
+				<!-- Answer -->
+				<div class="reviews__rev-item reviews__rev-item-2">
+					<p class="reviews__wrap_desk">
+						Прилетела в Москву и понадобилась машина, обратилась в данный прокат авто, оформила заявку, получила подтверждение, поставила бронь и поехала забирать. По приезду в офис ознакомилась с договором и получила автомобиль. По самой машине все отлично, свежая и без запахов, самое главное, что оказалась красненькая!! В общем и целом осталась очень довольна, всем советую!!
+					</p>
+					<p class="reviews__wrap_name">Автопрокат  “Чайка” <span class="reviews__wrap_date">11 января 2020</span></p>
+				</div>
+			</div>
+			<!-- Num 2 -->
+			<div class="reviews__wrap">
+				<!-- Review -->
+				<div class="reviews__rev-item reviews__rev-item-1">
+					<p class="reviews__wrap_desk">
+						Прилетела в Москву и понадобилась машина, обратилась в данный прокат авто, оформила заявку, получила подтверждение, поставила бронь и поехала забирать. По приезду в офис ознакомилась с договором и получила автомобиль. По самой машине все отлично, свежая и без запахов, самое главное, что оказалась красненькая!! В общем и целом осталась очень довольна, всем советую!!
+					</p>
+					<p class="reviews__wrap_name">Виктория <span class="reviews__wrap_date">11 января 2020</span></p>
+					<span class="reviews__which-one">141</span>
+				</div>
+				<!-- Answer -->
+				<div class="reviews__rev-item reviews__rev-item-2">
+					<p class="reviews__wrap_desk">
+						Прилетела в Москву и понадобилась машина, обратилась в данный прокат авто, оформила заявку, получила подтверждение, поставила бронь и поехала забирать. По приезду в офис ознакомилась с договором и получила автомобиль. По самой машине все отлично, свежая и без запахов, самое главное, что оказалась красненькая!! В общем и целом осталась очень довольна, всем советую!!
+					</p>
+					<p class="reviews__wrap_name">Автопрокат  “Чайка” <span class="reviews__wrap_date">11 января 2020</span></p>
+				</div>
+			</div>
+			<!-- Num 3 -->
+			<div class="reviews__wrap">
+				<!-- Review -->
+				<div class="reviews__rev-item reviews__rev-item-1">
+					<p class="reviews__wrap_desk">
+						Прилетела в Москву и понадобилась машина, обратилась в данный прокат авто, оформила заявку, получила подтверждение, поставила бронь и поехала забирать. По приезду в офис ознакомилась с договором и получила автомобиль. По самой машине все отлично, свежая и без запахов, самое главное, что оказалась красненькая!! В общем и целом осталась очень довольна, всем советую!!
+					</p>
+					<p class="reviews__wrap_name">Виктория <span class="reviews__wrap_date">11 января 2020</span></p>
+					<span class="reviews__which-one">141</span>
+				</div>
+				<!-- Answer -->
+				<div class="reviews__rev-item reviews__rev-item-2">
+					<p class="reviews__wrap_desk">
+						Прилетела в Москву и понадобилась машина, обратилась в данный прокат авто, оформила заявку, получила подтверждение, поставила бронь и поехала забирать. По приезду в офис ознакомилась с договором и получила автомобиль. По самой машине все отлично, свежая и без запахов, самое главное, что оказалась красненькая!! В общем и целом осталась очень довольна, всем советую!!
+					</p>
+					<p class="reviews__wrap_name">Автопрокат  “Чайка” <span class="reviews__wrap_date">11 января 2020</span></p>
+				</div>
+			</div>
+			<!-- Num 4 -->
+			<div class="reviews__wrap">
+				<!-- Review -->
+				<div class="reviews__rev-item reviews__rev-item-1">
+					<p class="reviews__wrap_desk">
+						Прилетела в Москву и понадобилась машина, обратилась в данный прокат авто, оформила заявку, получила подтверждение, поставила бронь и поехала забирать. По приезду в офис ознакомилась с договором и получила автомобиль. По самой машине все отлично, свежая и без запахов, самое главное, что оказалась красненькая!! В общем и целом осталась очень довольна, всем советую!!
+					</p>
+					<p class="reviews__wrap_name">Виктория <span class="reviews__wrap_date">11 января 2020</span></p>
+					<span class="reviews__which-one">141</span>
+				</div>
+				<!-- Answer -->
+				<div class="reviews__rev-item reviews__rev-item-2">
+					<p class="reviews__wrap_desk">
+						Прилетела в Москву и понадобилась машина, обратилась в данный прокат авто, оформила заявку, получила подтверждение, поставила бронь и поехала забирать. По приезду в офис ознакомилась с договором и получила автомобиль. По самой машине все отлично, свежая и без запахов, самое главное, что оказалась красненькая!! В общем и целом осталась очень довольна, всем советую!!
+					</p>
+					<p class="reviews__wrap_name">Автопрокат  “Чайка” <span class="reviews__wrap_date">11 января 2020</span></p>
+				</div>
+			</div>
+			<!-- Num 5 -->
+			<div class="reviews__wrap">
+				<!-- Review -->
+				<div class="reviews__rev-item reviews__rev-item-1">
+					<p class="reviews__wrap_desk">
+						Прилетела в Москву и понадобилась машина, обратилась в данный прокат авто, оформила заявку, получила подтверждение, поставила бронь и поехала забирать. По приезду в офис ознакомилась с договором и получила автомобиль. По самой машине все отлично, свежая и без запахов, самое главное, что оказалась красненькая!! В общем и целом осталась очень довольна, всем советую!!
+					</p>
+					<p class="reviews__wrap_name">Виктория <span class="reviews__wrap_date">11 января 2020</span></p>
+					<span class="reviews__which-one">141</span>
+				</div>
+				<!-- Answer -->
+				<div class="reviews__rev-item reviews__rev-item-2">
+					<p class="reviews__wrap_desk">
+						Прилетела в Москву и понадобилась машина, обратилась в данный прокат авто, оформила заявку, получила подтверждение, поставила бронь и поехала забирать. По приезду в офис ознакомилась
+					</p>
+					<p class="reviews__wrap_name">Автопрокат  “Чайка” <span class="reviews__wrap_date">11 января 2020</span></p>
+				</div>
+			</div>
+			<div class="comments-btn">
+				<a href="#">загрузить еще отзывы</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Section Lead Bottom -->
+	<section class="lead-bottom">
+		<div class="container">
+			<div class="lead-bottom__text">
+				<h3 class="lead-bottom__title">Скидки постоянным клиентам</h3>
+				<p class="lead-bottom__desc">
+					Мы заботимся о наших клиентах и предоставляем скидку 5%! Просто заполните заявку на сайте! Спасибо, что пользуетесь нашими услугами.
+				</p>
+			</div>
+			<div class="lead-bottom__button">
+				<div class="lead-btn-2">
+					<a href="#">стать клиентом</a>
+				</div>
+				<a href="#" class="lead-bottom__link">Как еще получить скидку 5%?</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Section Map and Contacts -->
+	<section class="map">
+		<iframe class="yandex-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac2077f45fb3448751d2a4264c5aca7fbfd6c5b400e2aa978a59fdd3ab45a8aef&amp;source=constructor" width="100%" height="492" frameborder="0"></iframe>
+		<div class="container">
+			<div class="map__contacts">
+				<h2 class="map__title">Контакты</h2>
+				<div class="map__contact-group">
+					<h3 class="map__heading">Адрес: </h3>
+					<p class="map__text">г. Москва, Проспект Вернадского 41 с1</p>
+				</div>
+				<div class="map__contact-group">
+					<h3 class="map__heading">Телефон: </h3>
+					<p class="map__text">
+						<a href="tel:+74993404077">+7(499)340-40-77</a>, 
+						<a href="tel:+74959950700">+7(495)995-07-00</a>
+					</p>
+				</div>
+				<div class="map__contact-group">
+					<h3 class="map__heading">Email: </h3>
+					<p class="map__text">
+						<a href="mailto:prokat-km@mail.ru">prokat-km@mail.ru</a>
+					</p>
+				</div>
+				<div class="map__social">
+					<a href="#" class="map__social_icon-wrap vk"></a>
+					<a href="#" class="map__social_icon-wrap vk"></a>
+					<a href="#" class="map__social_icon-wrap vk"></a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__logo">
+				<a href="index.html"><img src="img/logo-footer.png" alt="logo"></a>
+			</div>
+			<!-- Block 1 -->
+			<div class="footer__block first">
+				<ul>
+					<li class="footer__block_title"><a href="#">Главная</a></li>
+					<li class="footer__block_link"><a href="#">О компании</a></li>
+					<li class="footer__block_link"><a href="#">Отзывы</a></li>
+					<li class="footer__block_link"><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+			<!-- Block 2 -->
+			<div class="footer__block">
+				<ul>
+					<li class="footer__block_title"><a href="#">Каталог</a></li>
+					<li class="footer__block_link"><a href="#">Эконом класс</a></li>
+					<li class="footer__block_link"><a href="#">Премиум класс</a></li>
+					<li class="footer__block_link"><a href="#">Внедорожники</a></li>
+					<li class="footer__block_link"><a href="#">Акции</a></li>
+				</ul>
+			</div>
+			<!-- Block 3 -->
+			<div class="footer__block">
+				<ul>
+					<li class="footer__block_title"><a href="#">условия</a></li>
+					<li class="footer__block_link"><a href="#">Наши услуги</a></li>
+					<li class="footer__block_link"><a href="#">Условия проката</a></li>
+					<li class="footer__block_link"><a href="#">Тарифы компании</a></li>
+					<li class="footer__block_link"><a href="#">Автомобили для работы в такси</a></li>
+				</ul>
+			</div>
+			<!-- Block 4 -->
+			<div class="footer__block">
+				<ul>
+					<li class="footer__block_title"><a href="#">Контакты</a></li>
+					<li class="footer__block_tel"><a href="tel:+74993404077">+7(499)340-40-77</a></li>
+					<li class="footer__block_tel"><a href="tel:+74959950700">+7(495)995-07-00</a></li>
+					<li class="footer__block_adress">г. Москва, пр. Вернадского, 41 с1</li>
+					<li class="footer__block_mail"><a href="mailto:prokat-km@mail.ru">prokat-km@mail.ru</a></li>
+				</ul>
+			</div>
+			<!-- Block 5 -->
+			<div class="footer__block policy-block">
+				<ul>
+					<li class="footer__block_copyright">(с) 2001-2020 Автопрокат “Чайка”</li>
+					<li class="footer__block_policy"><a href="#">Политика конфиденциальности</a></li>					
+				</ul>
+				<!-- Button -->
+				<div class="top-contacts__button">
+					<div class="lead-btn">
+						<a href="#">Онлайн заявка</a>
+					</div>
+					<div class="top-contacts__button_discount">
+						Скидка 5%
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<!-- Mask phone input -->
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<!-- FancyBox -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+	<!-- jQuery UI -->
+	<script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	<!-- jQuery UI Russian Language -->
+	<script src="js/ui-ru.js"></script>
+	<!-- Swiper slider -->
+	<script src="js/swiper.min.js"></script>
+	<!-- Main JS -->
+	<script src="js/main.js"></script>
+</body>
+</html>

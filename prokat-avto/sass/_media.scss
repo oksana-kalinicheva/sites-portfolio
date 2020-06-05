@@ -1,0 +1,1109 @@
+/* Media breikpoints */
+@media (min-width: 1440px) {
+	.tablet-panel {
+		display: none;
+	}
+	.mobile-menu .container {
+		padding: 26px 93px 100px 93px;
+	}
+	.how-works .container {
+		padding: 45px 162px 81px;
+	}
+	.car-card .car-price__item {
+		margin: 3px;
+	}
+}
+@media (max-width: 1439px) {
+	.desktop-menu,
+	.top-contacts {
+		display: none;
+	}
+	.mobile-menu .container {
+		padding: 30px;
+	}
+	.top-contacts__button_discount {
+		font-size: 14px;
+		padding: 2px 10px;
+		margin-top: 3px;
+	}
+	.button_discount-bottom {
+		right: 7px;
+		top: -13px;
+	}
+	.choose-car__wrap_item_new {
+		top: -13px;
+		right: 7px;
+	}
+	.advantages .container {
+		max-width: 92%;
+	}
+	.find-car__form_discount {
+		max-width: 93%;
+	}
+	.find-car__form_discount {
+		position: static;
+		text-align:center;
+		max-width:none;
+		border-left: none;
+		margin-top: 15px;
+		font-weight: 800;
+		a {
+			color: #368ec0;
+			&:hover {
+				color: #0a4567;
+				transition: color .4s;
+			}
+		}
+	}
+	.how-works__left-side_wrap:before {
+		max-width: 110%;
+	}
+	.booking__wrap_link {
+		flex-direction: column;
+		padding: 20px 45px;
+	}
+	.booking__wrap_price-card {
+		margin: 0 20px;
+	}
+	.booking__wrap_link_button {
+		margin-left: 0;
+		margin-top: 10px;
+	}
+	.comments__slider {
+		max-width: 94%;
+	}
+	.lead-bottom__desc {
+		max-width: 752px;
+	}
+	.lead-bottom__button {
+		margin-left: 50px;
+	}
+	.footer__block {
+		/* flex-basis: 20%; */
+		margin: 0 10px;
+	}
+	.car .img_preview {
+		
+	}
+	.car__gallery {
+		justify-content: flex-start;
+	}
+	.car__feature_desc {
+		flex-basis: 40%;
+	}
+	.car-card .lead-btn {
+		min-width: auto;
+	}
+}
+@media (min-width: 1199px) {
+	.mobile-menu_active {
+		width: 30%;
+	}
+}
+@media (max-width: 1270px) {
+	.booking__wrap {
+		justify-content: center;
+	}
+	.booking__wrap_price-card {
+		margin: 0 30px;
+	}
+	.booking__wrap_link {
+		margin: 15px;
+		padding: 10px 20px;
+	}
+	.booking__wrap_link_button {
+	}
+	.booking__wrap_img {
+		max-width: 165px;
+	}
+	.booking .car-price__item_cost {
+		font-size: 16px;
+	}
+	.more-services .rent__item {
+		flex-basis: 30%;
+	}
+	.contacts-page__images {
+		max-width: 50%;
+	}
+	.why-we .container {
+		padding: 53px 15px;
+	}
+	.partners__wrap_image {
+		flex-basis: 30%;
+	}
+	.how-works__accordion {
+		margin-right: 73px;
+	}
+}
+@media (max-width: 1199px) {  
+	.tablet-panel .top-contacts__item-wrap_mail,
+	.why-we .why-we-wrap:before,
+	.choose-car:before,
+	.booking:before {
+		display: none;
+	}
+	.mobile-menu_active {
+		width: 40%;
+	}
+	.booking__wrap {
+		max-width: 80%;
+		margin: 0 auto 30px;
+	}
+	.booking__wrap_price-card {
+		flex-direction: row;
+		justify-content: center;
+	}
+	.booking__wrap_img {
+		min-height: auto;
+		max-width: 300px;
+		border: none;
+		margin-bottom: 20px;
+	}
+	.booking__wrap_link {
+		flex-direction: row;
+		justify-content: space-between;
+		margin: 30px 15px 10px;
+	}
+	.booking__wrap_link_text {
+		margin-top: 15px;
+		margin-right: 50px;
+	}
+	.why-we__title {
+		text-align: center;
+	}
+	.why-we .why-we-wrap {
+		max-width: none;
+		justify-content: space-around;
+	}
+	.lead-bottom {
+		text-align: center;
+	}
+	.lead-bottom__desc {
+		max-width: none;
+	}
+	.lead-bottom__button {
+		margin: 0 auto;
+	}
+	.partners__title {
+		text-align: center;
+	}
+	.partners__wrap_image {
+		justify-content: space-between;
+	}
+	.partners__wrap_image {
+		flex-basis: 27%;
+	}
+	.avto-class .container {
+		padding: 5px 15px 0;
+	}
+	.car__price-group {
+		justify-content: flex-start;
+	}
+	.car .car__wrap {
+		flex-basis: 40%;
+	}
+	.car .img_preview {
+		max-width: 149px;
+	}
+	.car .container {
+		display: flex;
+		padding: 60px 15px 55px;
+	}
+	.price-list .price-list__dates {
+		padding: 10px;
+	}
+	.price-list .price-list__accordion_content {
+		padding: 20px 17px 32px 20px;
+	}
+	.price-list__images {
+		max-width: none;
+	}
+	.work-page-conditions__item {
+		flex-basis: 32%;
+	}
+	.work-page-conditions__item_image {
+		flex-basis: 26%;
+	}
+	.extended-form .lead-btn-2 {
+		margin-bottom: 40px;
+	}
+	.car-card__wrap {
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: center;
+		padding: 15px;
+		width: 93%;
+		padding: 15px 20px;
+	}
+	.car-card__item {
+		width: 100%;
+		&:first-child {
+			margin-bottom: 15px;
+		}
+	}
+	.car-card___img {
+		flex-shrink: 2;
+	}
+	.car-card__price-card {
+		width: 60%;
+	}
+	.car-card .booking__wrap_link {
+		max-width: none;
+		margin: 15px 0;
+		width: 94%;
+		justify-content: space-around;
+		align-items: center;
+		margin-left: 2.8%;
+		margin-top: 6px;
+		align-items: flex-start;
+		flex-shrink: 2;
+	}
+	.car-card .item-1 {
+	}
+	.car-card .item-2 {
+		
+	}
+	.car-card .car-price {
+		flex-direction: row;
+		margin: 0;
+	}
+	.car-card .car-price__item {
+		padding: 6px 15px;
+		height: 53px;
+		align-items: baseline;
+	}
+	.car-card .booking__wrap_link_text {
+		margin: 0 25px 15px 0;
+	}
+	.car-card .booking__wrap_link_button {
+		margin: 0;
+	}
+	.car-card__b-text {
+		flex-grow: 2;
+		flex-basis: auto;
+	}
+	.car-card__desc {
+		flex-basis: 50%;
+	}
+
+}
+@media (min-width: 992px) {
+}
+@media (max-width: 991px) {
+	.mobile-menu_active {
+		width: 50%;
+	}
+	body {
+		font-size: 15px;
+	}
+	.comments__slider {
+		max-width: 90%;
+	}
+	.tablet-panel {
+		height: 62px;
+		.top-contacts__item-wrap_adress,
+		.top-contacts__call,
+		.top-contacts__button {
+			display: none;
+		}
+		.desktop-menu__logo {
+			max-width: 90px;
+		}
+	}
+	.lead-btn-2 {
+	}
+	.find-car__form_wrap {
+		justify-content: center;
+	}
+	.find-car input {
+		margin: 10px 20px;
+	}
+	.choose-car__wrap_item {
+		flex-basis: 46%;
+		margin: 14px;
+	}
+	.booking__wrap {
+		max-width: 100%;
+	}
+	.booking .car-price {
+		justify-content: flex-start;
+	}
+	.booking .car-price__item {
+		margin: 5px;
+		width: 115px;
+		height: 55px;
+	}
+	.booking .car-info__name {
+		margin-bottom: 10px;
+	}
+	.how-works__title {
+		text-align: center;
+		margin-bottom: 40px;
+	}
+	.how-works__accordion {
+		margin-right: 0;
+		flex-basis: 100%;
+		.lead-btn-2 a {
+			padding: 15px 25px!important;
+		}
+	}
+	.how-works__left-side {
+		flex-basis: 100%;
+	}
+	.how-works__left-side_wrap {
+		min-height: 385px;
+		max-width: none;
+	}
+	.how-works__left-side_wrap:before {
+		top: 0;
+		left: 10%;
+		max-width: 91%;
+		max-height: 400px;
+	}
+	.rent__title {
+		text-align: center;
+	}
+	.rent__item {
+		flex-basis: 45%;
+		margin: 15px;
+	}
+	.why-we .why-we-wrap__item {
+		flex-basis: 45%;
+	}
+	.map__contacts {
+		width: auto;
+	}
+	.footer__block {
+		flex-basis: 18%;
+	}
+	.policy-block {
+		display: flex;
+		justify-content: space-between;
+		flex-basis: 100%;
+		margin-top: 30px;
+		ul {
+			margin-right: 70px;
+		}
+	}
+	.avto-class__image {
+		max-width: 36%;
+	}
+	.avto-class__wrap {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+	.avto-class__image {
+		max-width: 50%;
+	}
+	.form__group_wrap .group_rent {
+		flex-basis: 45%;
+	}
+	.form .form__info {
+		flex-basis: 47%;
+	}
+	.more-services .rent__item {
+		flex-basis: 100%;
+		margin: 0 0 40px 0;
+	}
+	.more-services .rent__item:not(:last-child) {
+		margin-right: 0;
+	}
+	.more-services__title {
+		text-align: center;
+	}
+	.more-services .container {
+		padding: 43px 15px 40px;
+	}
+	.price-list__accordion_content {
+		/* flex-direction: column; */
+	}
+	.reviews__rev-item-1:before {
+		bottom: -19%;
+		left: 2.2%;
+	}
+	.car .img_preview {
+		max-width: 103px;
+	}
+	.car__button-block {
+		justify-content: center;
+	}
+	.car__tabs_link {
+		margin-right: 10px;
+	}
+	.car .lead-btn-2 {
+		margin-top: 8px;
+	}
+	.contacts-page__images {
+		max-width: 100%;
+		margin: 0 auto;
+	}
+	.contacts-page__contacts {
+		margin: auto;
+	}
+	.price-list .col-1 {
+		width: 100px;
+	}
+	.price-list .price-list__title_car-name {
+		font-size: 19px;
+	}
+	.price-list .price-list__cost .col-1 {
+		font-size: 15px;
+	}
+	.price-list .dates {
+		flex-direction: column;
+		padding: 0 30px 10px;
+	}
+	.price-list .datapicker_date  {
+		margin: 8px;
+	}
+	.price-list .price-list__input-group:not(.dates) {
+		width: 196px;
+		margin: auto;
+	}
+	.work-page-conditions__wrap {
+		flex-wrap: wrap;
+	}
+	.work-page-conditions__item {
+		flex-basis: 50%;
+		margin: 0 auto;	
+	}
+	.work-page-conditions ul {
+		margin-left: 15px;
+	}
+	.work-page-conditions .container {
+		padding: 20px 15px 50px;
+	}
+	.tarif {
+		margin-bottom: 80px;
+	}
+	.tarif .col-1 {
+		width: 171px;
+	}
+	.tarif .price-list__title_car-name {
+		font-size: 20px;
+	}
+	.extended-form__input-group-1 {
+		flex-basis: 30%;
+	}
+	.extended-form textarea {
+		width: 460px;
+	}
+	.about-company .about-company__wrap {
+		flex-direction: column;
+	}
+	.wrap-inversed .about-company__img {
+		order: 2;
+	}
+	.about-company__wrap {
+		flex-wrap: wrap;
+	}
+	.about-company .container {
+		padding: 57px 15px 19px;
+	}
+
+
+	// max-width: 991px END
+}
+
+@media (min-width: 768px) {
+	.mobile-menu a {
+		font-size: 25px;
+	}
+}
+@media (max-width: 767px) {
+	html {
+		font-size: 15px;
+	}
+	.why-we:after,
+	.yandex-map {
+		display: none;
+	}
+	.slide-next {
+		right: -7px;
+	}
+	.slide-prev {
+		left: -7px;
+	}
+	.mobile-menu_active {
+		width: 70%;
+	}
+	.mobile-menu a {
+		font-size: 20px;
+	}
+	.choose-car__wrap {
+		justify-content: center;
+	}
+	.choose-car__wrap_item {
+		flex-basis: 80%;
+	}
+	.booking .container {
+		padding: 15px;
+	}
+	.booking__wrap_link {
+		flex-direction: column;
+		text-align: center;
+		padding: 15px;
+		width: 100%;
+	}
+	.booking__wrap_link_text {
+		margin-right: 0;
+	}
+	.booking__wrap_link_button {
+		margin-top: 27px;
+	}
+	.booking .car-price {
+		margin-bottom: 20px;
+	}
+	.booking .car-info__name {
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+	.how-works__left-side_wrap:before {
+		left: 20px;
+	}
+	.rent__item {
+		flex-basis: 100%;
+		margin-bottom: 20px;
+		min-height: 230px;
+	}
+	.why-we .container {
+		padding: 20px 15px 7px 15px;
+	}
+	.why-we .why-we-wrap__item {
+		flex-basis: 100%;
+		margin: 15px 5px 15px 5px;
+		min-height: 80px;
+	}
+	.about-us__wrap {
+		flex-basis: 100%;
+	}
+	.about-us__image {
+		flex-basis: 100%;
+	}
+	.map {background: #f3f3f3;min-height: auto;}
+	.map__contacts {
+		position: static;
+		padding: 20px 0;
+		background: none;
+	}
+	.partners .container {
+		padding: 0 15px 20px 15px;
+	}
+	.map__contacts {
+		margin-bottom: 40px;
+	}
+	.footer__block {
+		flex-basis: 24%;
+	}
+	.policy-block {
+		flex-basis: 62%;
+		align-self: flex-end;
+	}
+	.policy-block ul {
+		margin-right: 20px;
+	}
+	.form__group_wrap .group_rent {
+		flex-basis: 100%;
+	}
+	.form .form__info {
+		flex-basis: 98%;
+	}
+	.form__image {
+		margin: 0 20%;
+	}
+	.form .size23,
+	.form .size13 {
+		flex-basis: 47.7%;
+	}
+	.conditions__item {
+		flex-basis: 100%;
+		margin-left: 20px;
+	}
+	.conditions .item-2 {
+		flex-basis: 100%;
+		margin-left: 20px;
+	}
+	.conditions__li:before {
+		left: 11px;
+		top: 7px;
+		width: 11px;
+		height: 11px;
+	}
+	.other-conditions__wrap {
+		margin-left: 20px;
+		justify-content: center;
+	}
+	.other-conditions__text {
+		flex-basis: 100%;
+	}
+	.other-conditions__image {
+		flex-basis: 50%;
+	}
+	.car .container {
+		flex-direction: column;
+	}
+	.price-list .lead-btn-2 a {
+		padding: 17px 20px;
+	}
+	.price-list .price-list__accordion_content {
+		flex-wrap: wrap;
+	}
+	.price-list .price-list__title-text,
+	.price-list .price-list__cost {
+		font-size: 13px;
+	}
+	.price-list .price-list__title_car-name {
+		font-size: 15px;
+		font-weight: bold;
+	}
+	.price-list .col-1 {
+		width: 79px;
+	}
+	.price-list__title_image {
+		display: none;
+	}
+	.price-list .price-list__images {
+		max-width: 330px;
+		margin: 0 auto 20px;
+	}
+	.price-list .price-list__dates {
+		margin: auto;
+	}
+	.price-list .dates {
+		width: 90%;
+		flex-direction: row;
+		margin: 0 auto;
+		padding: 0 30px 10px 0;
+	}
+	.price-list .price-list__input-group:not(.dates) {
+		width: 196px;
+		margin-left: 8%;
+	}
+	.price-list__button {
+		max-width: none;
+		width: 70%;
+		margin: 10px auto;
+	}
+	.price-list .top-contacts__button_discount {
+		font-size: 12px;
+	}
+	.tarif .row * {
+		font-size: 15px;
+	}
+	.tarif .col-1 {
+		width: 110px;
+	}
+	.tarif .price-list__title_image {
+		display: flex;
+	}
+	.tarif .price-list__title {
+		font-size: 18px;
+	}
+	.extended-form__input-group-1 {
+		flex-basis: 100%;
+		margin: auto;
+	}
+	.extended-form .container {
+		text-align: center;
+	}
+	.extended-form__input-group-2 {
+		flex-basis: 100%;
+		margin: auto;
+	}
+	.extended-form textarea {
+		width: 100%;
+	}
+	.extended-form .form__agree {
+		margin-top: 20px;
+	}
+	.lead-btn-2 {
+		margin: auto;
+	}
+	.car-card__wrap .it-1,
+	.car-card__item {
+		flex-wrap: wrap;
+	}
+	.car-card .booking__wrap_link {
+		align-items: center;
+	}
+	.car-card .booking__wrap_link_text {
+		margin-right: 0;
+	}
+	.car-card___img {
+		width: 100%;
+		margin: 20px auto;
+		text-align: center;
+		height: 100%;
+		min-height: 330px;
+	}
+	.car-card__price-card {
+		margin-left: 0;
+		width: 100%;
+	}
+	.car-info {
+		padding: 0 4.2%;
+	}
+	.car-card .car-price {
+		padding: 0 5px;
+	}
+	.about-company__img {
+		margin-left: 20px;
+	}
+	.info-text .container {
+		padding: 40px 15px 62px;
+	}
+	.info-text__p {
+		font-size: 23px;
+	}
+
+	// max-width: 767px END
+}
+@media (min-width: 576px) and (max-width: 619px) {
+}
+@media (min-width: 576px) {
+}
+@media (max-width: 575px) {
+	.top-contacts,
+	.why-we .why-we-wrap:before,
+	.choose-car__title:before,
+	.clipped-image svg{
+		display: none;
+	}
+	.mobile-menu_active {
+		width: 100%;
+	}
+	html {
+		font-size: 14px;
+	}
+	body {
+		font-size: 0.875rem;
+		line-height: 1.4;
+	}
+	.find-car__form_wrap {
+		justify-content: center;
+		input {
+			margin: 7px 0 15px;
+		}
+		.lead-btn-2 a {
+			padding: 15px 37px;
+		}
+	}
+	.find-car__form {padding: 20px 15px;}
+	.find-car .container {padding: 20px 15px 60px;}
+	.find-car__form_politics {
+		line-height: 1.4;
+	}
+	.choose-car__wrap_item {
+		flex-basis: 100%;
+	}
+	.choose-car__wrap_item_img {
+		margin: 21px auto 0;
+	}
+	.choose-car__wrap_item_new {
+		top: 10px;
+		right: 10px;
+	}
+	.booking__title {
+		margin-top: 0;
+	}
+	.booking__wrap {
+		padding: 25px 15px;
+		justify-content: flex-start;
+		flex-direction: row;
+	}
+	.booking__wrap_price-card {
+		margin: 0;
+	}
+	.booking__wrap_img {
+		margin: 0 auto 20px;
+	}
+	.lead-bottom__button {
+		margin: auto;
+	}
+	.lead-bottom .lead-btn-2 a {
+		padding: 17px 65px;
+	}
+	.how-works__wrap {
+		padding-left: 7px;
+	}
+	.how-works .accordion_wrap .pseudo:before, 
+	.how-works .accordion_wrap .pseudo-2:before {
+		left: -39px;
+	}
+	.how-works .accordion_wrap .pseudo:after, 
+	.how-works .accordion_wrap .pseudo-2:after {
+		left: -27px;
+	}
+	.how-works .accordion_wrap .accordeon-arrow:after {
+		width: 18px;
+		height: 9px;
+	}
+	.how-works__left-side_wrap {
+		min-height: 320px;
+	}
+	.how-works__title {
+		text-align: center;
+		font-size: 28px;
+	}
+	.delivery .container {padding: 20px 15px;}
+	.delivery .lead-btn-2 a {padding: 15px 25px;}
+	.rent .container {
+		padding: 20px 15px;
+	}
+	.rent__title {text-align: center;}
+	.why-we__title {margin-top: 0;}
+	.comments .container {
+		padding: 20px 15px;
+	}
+	.comments__amount {
+		margin-left: 0;
+		font-size: 20px;
+	}
+	.comments .comments-btn {
+		margin-bottom: 20px;
+		a {padding: 15px 25px;}
+	}
+	.comments .lead-btn-2 a {padding: 15px 40px;}
+	.comments .slide-next {
+		right: -23px;
+	}
+	.comments .slide-prev {
+		left: -23px;
+	}
+	.partners__title {
+		text-align: center;
+	}
+	.partners__wrap_image {
+		flex-basis: 75%;
+		margin: 0 auto 25px;
+	}
+	.footer .container {
+		text-align: center;
+	}
+	.footer__block {
+		flex-basis: 46%;
+		margin: 15px 0;
+		&:last-child {
+			display: block;
+			flex-basis: 100%;
+			text-align: center;
+		}
+	}
+	.footer .first {
+		padding-left: 0;
+		margin-left: 0;
+	}
+	.footer__logo {
+		flex-basis: 100%;
+		max-width: 100%;
+		height: auto;
+		margin-bottom: 30px;
+		img {
+			max-width: 200px;
+		}
+	}
+	.footer .top-contacts__button {
+		margin-top: 0;
+	}
+	.footer .lead-btn a {
+		max-width: 470px;
+	}
+	.footer__block_link a {
+		font-size: 14px;
+	}
+	.footer .policy-block {
+		font-size: 12px;
+	}
+	.top-contacts__button_discount {
+		right: -10px;
+		top: -16px;
+	}
+	.form .size23,
+	.form .size13 {
+		flex-basis: 100%;
+	}
+	.reviews__rev-item-1:before {
+		bottom: -12%;
+		left: 5.2%;
+	}
+	.reviews__rev-item-2 {
+		margin: 0 0 0 auto;
+	}
+	.mobile-menu .desktop-menu__nav ul li {
+		margin-bottom: 12px;
+	}
+	.mobile-menu .desktop-menu__logo {
+		margin-bottom: 10px;
+	}
+	.car .container {
+		display: flex;
+		padding: 40px 15px 40px;
+	}
+	.car__dates-wrapper {
+		flex-direction: column;
+	}
+	.car__cost {
+		padding: 25px 10px;
+	}
+	.car .price-list__dates {
+		padding: 30px 15px 0;
+	}
+	.car .lead-btn-2 a {
+		padding: 13px 35px;
+		margin: auto;
+	}
+	.car .car__feature {
+		padding: 34px 15px 0px;
+	}
+	.car__feature_name {
+		max-width: 45%;
+	}
+	.car__tabs_list {
+		position: static;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		flex-direction: column;
+	}
+	.car .car__tabs_link {
+		margin-bottom: 15px;
+	}
+	.contacts-page__images {
+		flex-wrap: wrap;
+	}
+	.contacts-page__images_img,
+	.contacts-page .img-1 {
+		margin: 0 auto 30px;
+	}
+	.contacts-page .container {
+		padding: 70px 15px;
+	}
+	.discount__wrap {
+		padding: 15px;
+	}
+	.discount__text {
+		max-width: 100%;
+		text-align: center;
+	}
+	.discount .lead-btn {
+		margin: 0 auto;
+	}
+	.discount .container {
+		padding: 30px 15px;
+	}
+	.discount-color-style,
+	.discount-color-nodesc-style {
+		background-size: cover!important;
+	}
+	.discount-color-style .discount__text,
+	.discount-color-nodesc-style .discount__text {
+		background: rgba(0,0,0,0.6);
+		padding: 9px;
+		border-radius: 7px;
+	}
+	.price-list .price-list__accordion_content {
+		padding: 15px;
+	}
+	.price-list__dates {
+		flex-basis: 100%;
+	}
+	.price-list .price-list__images,
+	.price-list .datapicker_date {
+		width: 100%;
+	}
+	.price-list .dates {
+		flex-direction: column;
+		width: 100%;
+		padding: 0;
+	}
+	.price-list .price-list__input-group:not(.dates) {
+		width: 100%;
+		margin-left: 2%;
+		margin-top: 5%;
+	}
+	.price-list__button{
+		flex-basis: 100%;
+	}
+	.price-list .yellow-border-block p {
+		margin: 0;
+	}
+	.price-list__heading *,
+	.price-list .price-list__title_car-name,
+	.price-list .col-1 {
+		font-size: 10px;
+	}
+	.price-list__title {
+		padding-left: 28px;
+		font-size: 11px;
+	}
+	.price-list .col {
+		flex-grow: 2;
+	}
+	.price-list .col-1 {
+		width: 40px;
+	}
+	.price-list__title-text:not(:last-child) {
+		border-right: 1px solid #9B9B9B;
+	}
+	.price-list .top-contacts__button_discount {
+		font-size: 10px;
+		font-weight: normal;
+	}
+	.work-page-conditions__item {
+		flex-basis: 100%;
+	}
+	.tarif .price-list__title_image {
+		display: none;
+	}
+	.price-list__title-text {
+		font-size: 15px;
+	}
+	.tarif .col-1 {
+		width: 65px;
+		font-size: 13px;
+	}
+	.tarif .price-list__title {
+		font-size: 15px;
+	}
+	.tarif .price-list__heading * {
+		font-size: 12px;
+	}
+	.car-card__item {
+		width: 100%;
+		flex-wrap: wrap;
+	}
+	.car-card__wrap {
+		padding: 15px;
+	}
+	.work-page-conditions .container {
+		padding: 20px 15px;
+	}
+	.tarif {
+		margin-bottom: 0;
+	}
+	.car-card__price-card {
+		margin-left: 0;
+	}
+	.car-card .car-price {
+		justify-content: flex-start;
+	}
+	.car-card .car-info__name {
+		margin-top: 15px;
+	}
+	.car-card___img {
+		flex-basis: 100%;
+	}
+	.about-company__img {
+		margin-left: 0;
+	}
+	.about-company__wrap .clipped-image__image {
+		width: 290px;
+		height: 290px;
+	}
+	.other-conditions__wrap {
+		margin-left: 0;
+	}
+}
+
+
