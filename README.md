@@ -1,7 +1,7 @@
 # sites-portfolio
 Портфолио верстка сайтов
 
-iren-art https://amy-devito.github.io/
+iren-art https://iren-art.ru/
 
 avto-prokat - https://avto-arenda.com/
 
