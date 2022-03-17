@@ -1,0 +1,845 @@
+// Импорт sccs
+@import "reset.scss";
+@import "fonts.scss";
+
+$section-padding-default: 33px;
+
+// Псевдоэлемент
+%pseudo {
+	content: "";
+	position: absolute;
+}
+
+html {
+	font-size: 16px;
+	font-family: "Arial", sans-serif;
+}
+h2,
+h3 {
+	font-family: "Lobster", sans-serif;
+	text-align: center;
+}
+h2 {
+	line-height: 1.2;
+}
+h3 {
+	@include adaptiv-font(42, 25);
+	color: #3e3336;
+}
+p {
+	margin: 20px 0;
+	line-height: 1.2;
+}
+section {
+	// отступы секций по умолчанию
+	padding-top: $section-padding-default;
+	padding-bottom: $section-padding-default;
+}
+// Вспомогательные классы
+.text-bold {
+	font-weight: 800;
+}
+.text-italic {
+	font-family: "Arial-italic", sans-serif;
+	font-size: 18px;
+}
+.align-items-center {
+	align-items: center;
+}
+// Классы вертикальных надписей
+.year {
+	position: relative;
+	@media (max-width: 1199.98px) {
+		align-items: center;
+	}
+	&::before {
+		position: absolute;
+		font-size: 85px;
+		font-weight: 800;
+		writing-mode: vertical-rl;
+		font-family: "Arial-black", sans-serif;
+		letter-spacing: -10px;
+		@media (max-width: 1199.98px) {
+			letter-spacing: -5px;
+			font-size: 60px;
+		}
+		@media (max-width: 991.98px) {
+			font-size: 53px;
+			letter-spacing: -4px;
+			top: 40px;
+		}
+		@media (max-width: 575.98px) {
+			display: block;
+			writing-mode: horizontal-tb;
+			position: static;
+			margin: 0 auto;
+			text-align: center;
+		}
+	}
+}
+.year__mod1 {
+	&::before {
+		content: "1951";
+		color: #a9a9a9;
+		right: -56px;
+		top: 20px;
+		@media (max-width: 1199.98px) {
+			right: -32px;
+			top: 10px;
+		}
+		@media (max-width: 767.98px) {
+			top: 73px;
+		}
+	}
+}
+.year__mod2 {
+	&::before {
+		content: "1970";
+		color: #a9a9a9;
+		left: -54px;
+		top: 9px;
+		@media (max-width: 1199.98px) {
+			left: -32px;
+			top: 10px;
+		}
+		@media (max-width: 767.98px) {
+			top: 100px;
+			left: -15px;
+		}
+	}
+}
+.year__mod3 {
+	&::before {
+		content: "1961";
+		color: #fff;
+		left: -14px;
+		top: 36px;
+		@media (max-width: 1199.98px) {
+			left: -20px;
+			top: 60px;
+		}
+	}
+}
+.year__mod4 {
+	&::before {
+		content: "1971";
+		color: #fff;
+		right: -54px;
+		top: 44px;
+		@media (max-width: 1199.98px) {
+			right: -20px;
+			top: 60px;
+		}
+	}
+}
+.year__mod5 {
+	&::before {
+		content: "1981";
+		color: #e5d3ae;
+		left: -102px;
+		top: 98px;
+		@media (max-width: 1199.98px) {
+			left: -20px;
+			top: 95px;
+		}
+	}
+}
+.year__mod6 {
+	&::before {
+		content: "1987";
+		color: #e5d3ae;
+		right: -104px;
+		top: 97px;
+		@media (max-width: 1199.98px) {
+			right: -20px;
+			top: 95px;
+		}
+	}
+}
+.year__mod7 {
+	&::before {
+		content: "1980";
+		color: #fff;
+		left: -17px;
+		top: -1px;
+		@media (max-width: 1199.98px) {
+			top: 45px;
+			left: -32px;
+		}
+		@media (max-width: 991.98px) {
+			top: 10px;
+		}
+	}
+}
+.year__mod8 {
+	&::before {
+		content: "1983";
+		color: #fff;
+		left: -15px;
+		top: -2px;
+		@media (max-width: 1199.98px) {
+			top: 22px;
+			left: -32px;
+		}
+		@media (max-width: 991.98px) {
+			top: 10px;
+		}
+	}
+}
+.year__mod9 {
+	&::before {
+		content: "1988";
+		color: #3e3336;
+		left: -15px;
+		top: 44px;
+		@media (max-width: 1199.98px) {
+			left: -10px;
+			top: 80px;
+		}
+	}
+}
+.year__mod10 {
+	&::before {
+		content: "1989";
+		color: #3e3336;
+		right: -57px;
+		top: 37px;
+		@media (max-width: 1199.98px) {
+			right: -25px;
+			top: 54px;
+		}
+		@media (max-width: 767.98px) {
+			top: 20px;
+		}
+	}
+}
+.year__mod11 {
+	&::before {
+		content: "1991";
+		color: #fff;
+		left: -15px;
+		top: 15px;
+		@media (max-width: 1199.98px) {
+			top: 35px;
+			right: -25px;
+		}
+		@media (max-width: 991.98px) {
+			top: 18px;
+		}
+	}
+}
+.year__mod12 {
+	&::before {
+		content: "1994";
+		color: #fff;
+		left: -15px;
+		top: -90px;
+		@media (max-width: 1199.98px) {
+			left: -10px;
+			top: 0;
+		}
+	}
+}
+.year__mod13 {
+	&::before {
+		content: "2005";
+		color: #fff;
+		left: -15px;
+		top: 118px;
+	}
+}
+// Секция мы первые
+.we-first {
+	background: url(../img/banner-1.png) no-repeat top center;
+	background-color: #182f3e;
+	background-size: cover;
+	color: #fff;
+	padding-bottom: 37px;
+	&_heading-1 {
+		@include adaptiv-font(73, 35);
+		position: relative;
+		text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.75);
+		max-width: 740px;
+		letter-spacing: -0.7px;
+		// Иконки заголовка
+		&::before {
+			@extend %pseudo;
+			height: 37px;
+			width: 37px;
+			background: url(../img/heading-pic-left.png);
+			background-repeat: no-repeat;
+			left: -14px;
+			top: 61%;
+			@media (max-width: 1199.98px) {
+				left: 0;
+				top: 60%;
+			}
+			@media (max-width: 767.98px) {
+				display: none;
+			}
+		}
+		&::after {
+			@extend %pseudo;
+			height: 37px;
+			width: 37px;
+			background-image: url(../img/heading-pic-right.png);
+			background-repeat: no-repeat;
+			right: 0;
+			top: 61%;
+			@media (max-width: 1199.98px) {
+				right: 0;
+				top: 60%;
+			}
+			@media (max-width: 767.98px) {
+				display: none;
+			}
+		}
+		@media (min-width: 1200px) {
+			margin: 0 0 0 122px;
+		}
+		@media (max-width: 1199.98px) {
+			max-width: none;
+			margin: 0 auto;
+		}
+	}
+
+	&_heading-2 {
+		text-align: center;
+		font-size: 26px;
+		@include adaptiv-font(26, 22);
+		text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.75);
+		@media (min-width: 1200px) {
+			margin: 0 0 47px -17px;
+		}
+		@media (max-width: 1199.98px) {
+			margin: 20px 0 30px 0;
+		}
+	}
+
+	&_text {
+	}
+}
+// Секция идеи
+.ideas {
+	position: relative;
+	z-index: 1;
+	// Рамки
+	&::before,
+	&::after {
+		@extend %pseudo;
+		width: 100%;
+		height: 6px;
+	}
+	&::before {
+		background: url(../img/border-top.png) repeat-x;
+		background-position: top center;
+		top: -5px;
+		background-size: contain;
+	}
+	&::after {
+		background: url(../img/border-bottom.png) repeat-x;
+		background-position: bottom center;
+		background-size: contain;
+		bottom: -5px;
+	}
+	&_info {
+		@media (max-width: 1199.98px) {
+			margin: 20px 0 40px 0;
+		}
+		@media (min-width: 1200px) {
+			margin-bottom: 90px;
+		}
+		&__mod2 {
+			@media (min-width: 1200px) {
+				margin-right: 27px;
+				padding-top: 40px;
+			}
+		}
+	}
+
+	&_heading {
+		text-align: center;
+		margin: -20px 0 25px 0;
+		@media (min-width: 1200px) {
+			text-align: right;
+			margin: -14px 28px 39px;
+		}
+		@media (max-width: 767.98px) {
+			width: 130%;
+		}
+		@media (max-width: 575.98px) {
+			width: 100%;
+		}
+	}
+
+	&_text {
+		margin: 16px 0;
+		color: #4e4e4e;
+		&__mod1 {
+			margin: 0 0 0 14px;
+			max-width: 600px;
+		}
+		&__mod2 {
+		}
+	}
+
+	&_image {
+		margin-left: auto;
+		@media (max-width: 1199.98px) {
+			margin: 0 auto;
+		}
+		&__mod1 {
+			margin: 0 -34px;
+			@media (max-width: 1199.98px) {
+				margin: 0 auto;
+			}
+		}
+		&__mod2 {
+			@media (max-width: 991.98px) {
+				margin-right: 5px;
+				align-self: flex-start;
+			}
+			@media (max-width: 575.98px) {
+				order: 2;
+			}
+		}
+		@media (max-width: 575.98px) {
+			max-width: 45%;
+			margin: 0 auto 60px;
+			img {
+				margin: 0 auto;
+			}
+		}
+	}
+}
+// Секция первые вирусы
+.first-viruses {
+	padding: 20px 0 120px 0;
+	background-color: #e5d3ae;
+	clip-path: polygon(0 0, 85% 0%, 100% 0, 100% 91%, 81% 91%, 50% 100%, 50% 100%, 19% 91%, 0 91%);
+	&_heading {
+		margin: 0 0 40px -7px;
+	}
+	&_item {
+	}
+
+	&_image {
+		@media (max-width: 1199.98px) {
+			img {
+				margin: 0 auto;
+			}
+		}
+		@media (max-width: 767.98px) {
+			max-width: 50%;
+			margin: 0 auto;
+		}
+		@media (max-width: 575.98px) {
+			max-width: 90%;
+		}
+		&__mod1 {
+			@media (min-width: 1200px) {
+				margin: 0 0 0 56px;
+			}
+		}
+		&__mod2 {
+			@media (min-width: 1200px) {
+				margin: 0 0 0 76px;
+			}
+		}
+	}
+
+	&_text {
+		padding: 5px 15px 0;
+		&__mod1 {
+			@media (min-width: 1200px) {
+				padding-left: 53px;
+				max-width: 437px;
+			}
+		}
+		&__mod2 {
+			@media (min-width: 1200px) {
+				padding-left: 19px;
+				max-width: 435px;
+			}
+		}
+	}
+	@media (max-width: 767.98px) {
+		clip-path: polygon(0 0, 100% 0, 100% 97%, 85% 97%, 50% 100%, 50% 100%, 15% 97%, 0 97%);
+	}
+}
+// Секция распространение
+.spread {
+	padding: 20px 0 12px 0;
+	&_heading {
+	}
+
+	&_item {
+		padding-top: 38px;
+		&__mod1 {
+		}
+
+		&__mod2 {
+			@media (min-width: 1200px) {
+				margin-left: 30px;
+			}
+		}
+		span {
+			@media (min-width: 1200px) {
+				padding-left: 11px;
+			}
+			@media (max-width: 1199.98px) {
+				display: block;
+				text-align: center;
+			}
+		}
+	}
+
+	&_image {
+		margin-top: 32px;
+		img {
+			max-height: 314px;
+			margin: 0 auto;
+			@media (max-width: 1199.98px) {
+				max-height: 260px;
+			}
+			@media (max-width: 575.98px) {
+				max-width: 60%;
+			}
+		}
+	}
+
+	&_text {
+		padding: 43px 15px 0;
+		text-align: justify;
+		&__mod1 {
+		}
+
+		&__mod2 {
+		}
+	}
+	@media (max-width: 1199.98px) {
+		padding: 20px 0 30px 0;
+	}
+}
+// Секция исследования
+.research {
+	background: url(../img/research-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-bottom: 88px;
+	&_heading {
+		color: #fff;
+		text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.75);
+		margin-top: -3px;
+	}
+
+	&_item {
+		&__mod1 {
+			padding-top: 9px;
+			padding-bottom: 60px;
+		}
+
+		&__mod2 {
+		}
+	}
+
+	&_image {
+		&__mod1 {
+			img {
+				margin: 10px auto 0;
+			}
+		}
+		&__mod2 {
+			img {
+				margin: -25px 0px 0px 14px;
+			}
+		}
+		img {
+			@media (max-width: 1199.98px) {
+				max-width: 75%;
+				margin: 5px 5px 0 40px;
+			}
+			@media (max-width: 575.98px) {
+				max-width: 38%;
+				margin: 0 auto;
+			}
+		}
+		@media (max-width: 991.98px) {
+			align-self: flex-start;
+		}
+	}
+
+	&_text {
+		color: #fff;
+		&__mod1 {
+			p {
+				margin-bottom: 25px;
+			}
+		}
+
+		&__mod2 {
+			p {
+				margin-bottom: 40px;
+				padding-left: 21px;
+				margin-top: 10px;
+				@media (max-width: 1199.98px) {
+					padding-left: 0;
+				}
+			}
+		}
+	}
+}
+// Секция незадолго до Dr.Web
+.before-dr-web {
+	padding: 60px 0 55px 0;
+	&_heading {
+	}
+
+	&_item {
+		&__mod1 {
+		}
+	}
+
+	&_image {
+		@media (max-width: 1199.98px) {
+			margin: 15px auto;
+		}
+		@media (max-width: 991.98px) {
+			align-self: flex-start;
+			img {
+				margin: 30px;
+			}
+		}
+		@media (max-width: 575.98px) {
+			img {
+				max-width: 40%;
+				margin: auto;
+			}
+		}
+		&__mod1 {
+			img {
+				margin: 24px 0px 0px 14px;
+			}
+		}
+		&__mod2 {
+			margin-left: 63px;
+			img {
+				margin: 17px 0 0 0;
+				@media (max-width: 991.98px) {
+					margin: 20px 0 20px -13px;
+				}
+			}
+		}
+	}
+
+	&_text {
+		&__mod1 {
+			p {
+				padding-left: 23px;
+			}
+			p:first-child {
+				padding-top: 21px;
+			}
+		}
+		&__mod2 {
+			@media (min-width: 1200px) {
+				padding-top: 59px;
+				padding-left: 23px;
+				max-width: 518px;
+			}
+			@media (max-width: 575.98px) {
+				order: 2;
+			}
+		}
+	}
+}
+// Секция книга
+.book {
+	background: url(../img/book-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 12px 0;
+	&_image {
+		img {
+			margin: 0 auto;
+			@media (min-width: 1200px) {
+				margin-left: 147px;
+			}
+			@media (max-width: 575.98px) {
+				max-width: 40%;
+			}
+		}
+		@media (max-width: 575.98px) {
+			margin: 17px 0 0px 0;
+		}
+	}
+
+	&_text {
+		color: #fff;
+		p {
+			padding: 30px;
+			@media (max-width: 1399.98px) {
+				margin: 30px 0px 21px -24px;
+			}
+		}
+	}
+	.row {
+		justify-content: right;
+	}
+}
+// Секция Spidr's web
+.spider-web {
+	padding-top: 90px;
+	background: url(../img/spider-web-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 690px;
+	clip-path: polygon(0 0, 85% 0%, 100% 0, 100% 85%, 84% 85%, 24% 100%, 18% 84%, 0 85%);
+	&_heading {
+	}
+
+	&_text {
+		@media (min-width: 1200px) {
+			padding-left: 100px;
+		}
+		@media (max-width: 1199.98px) {
+			margin-bottom: 35px;
+		}
+	}
+
+	&_image {
+		@media (max-width: 1199.98px) {
+			img {
+				max-width: 72%;
+				margin-left: auto;
+			}
+		}
+		@media (max-width: 767.98px) {
+			align-self: flex-start;
+			img {
+				margin: 37px 0 0 42px;
+			}
+		}
+		@media (max-width: 575.98px) {
+			img {
+				max-width: 40%;
+				margin: 0 auto;
+			}
+		}
+	}
+
+	&_desc {
+		@media (min-width: 1200px) {
+			margin: -18px 0 0 -39px;
+		}
+		padding: 15px;
+	}
+	@media (max-width: 1199.98px) {
+		clip-path: polygon(0 0, 100% 0, 100% 97%, 85% 97%, 50% 100%, 31% 100%, 15% 96%, 0 95%);
+		min-height: auto;
+		padding-bottom: 65px;
+	}
+}
+.spider-web * {
+	color: #fff;
+}
+// Секция хамелеоны
+.chameleons {
+	padding: 52px 0 75px 0;
+	&_heading {
+	}
+
+	&_item {
+		@media (max-width: 991.98px) {
+			justify-content: space-between;
+		}
+		&__mod1 {
+			padding-top: 58px;
+		}
+
+		&__mod2 {
+			padding-top: 18px;
+		}
+	}
+
+	&_image {
+		&__mod1 {
+		}
+
+		&__mod2 {
+			@media (min-width: 1200px) {
+				padding-left: 46px;
+			}
+			img {
+			}
+		}
+		img {
+			@media (max-width: 575.98px) {
+				max-width: 40%;
+				margin: 0 auto;
+			}
+		}
+	}
+
+	&_text {
+		&__mod1 {
+			@media (min-width: 1200px) {
+				margin: 0 0 0 -50px;
+			}
+		}
+
+		&__mod2 {
+			@media (max-width: 575.98px) {
+				order: 2;
+			}
+		}
+	}
+}
+// Секция Dr.Web начало
+.dr-begin {
+	background: #7eb636;
+	padding: 12px 0 150px 0;
+	@media (max-width: 1199.98px) {
+		padding-bottom: 50px;
+	}
+	&_heading {
+	}
+
+	&_item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 18px;
+		&__mod1 {
+		}
+
+		&__mod2 {
+		}
+	}
+
+	&_image {
+		width: 100%;
+		min-height: 303px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&__mod1 {
+		}
+
+		&__mod2 {
+		}
+	}
+	.year {
+		@media (max-width: 767.98px) {
+			align-items: flex-start;
+		}
+	}
+	.year::before {
+		@media (max-width: 767.98px) {
+			top: 135px;
+		}
+	}
+}
+.dr-begin * {
+	color: #fff;
+}
